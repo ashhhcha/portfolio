@@ -32,13 +32,14 @@ h3{
 h4{
     font-size:14pt;
     margin: unset;
+    font-weight:600;
 }
 
-p{
+p, li{
     font-size:14pt;
 }
 
-p, nav, ul, time, blockquote, div li{
+p, nav, ul, time, blockquote, div li, table{
     font-family: 'Nunito', sans-serif;
     line-height: 1.5em;
 }
@@ -48,12 +49,22 @@ blockquote{
     margin:30px;
 }
 
+#venTable th{
+    text-align: left;
+    width:20%;
+}
+
+#cuzTable th{
+    text-align: left;
+    width:25%;
+}
+
 /* text styling end*/
 
 header{
     text-align: center;
 }
-.navbar ul{
+.navbar ul, .VenSol nav ul{
     list-style-type: none;
     padding-left: unset;
 }
@@ -68,7 +79,8 @@ li a{
 }
 
 .navbar li a:hover{
-    background-color: #D6F5FF;
+    background-color: #EDFBFF;
+    color:#002A47;
     border-radius: 8px;
     padding: 5px 20px;
 }
@@ -88,10 +100,17 @@ li a{
     padding: 3px 15px;
 }
 
-.sectdiv h2{
-    margin-bottom:0px;
-    margin-top:5px;
+.thoughts{
+    width:60%;
+    margin:auto;
 }
+
+
+.sectdiv h1{
+    margin-bottom:0px;
+    margin-top:unset;
+}
+
 
 .description{
     width: 80%;
@@ -125,7 +144,8 @@ footer{
     background-size: cover;
     padding: 50px; 
     margin: 30px 0 0 0;
-    background-position: center bottom;
+    background-position: right bottom;
+    height:150px;
 }
 
 footer > nav ul {
@@ -134,12 +154,17 @@ footer > nav ul {
     padding-left: unset;
     margin: auto;
     width: 80%;
+    gap:10px;
 }
 
 footer > nav ul li a{
-    padding:10px;
+    padding: 3px 15px;    
     text-decoration: none;
+    border: 1px solid;
+    border-radius: 8px;
 }
+
+
 
 footer > h2, footer > ul{
     width: 80%;
@@ -155,6 +180,7 @@ footer > h2, footer > ul{
 
 #about h3{
     margin-bottom:0px;
+    margin-top: 3em;
 }
 
 #about {
@@ -190,7 +216,10 @@ body{
     padding-bottom: 5px;
 }
 
-
+.hifi{
+    width:60%;
+    margin:auto;
+}
 
 #photography h2{
     text-align: center;
@@ -206,23 +235,35 @@ img{
     height: auto;
 }
 
-.internalpage{
+.internalpage, .internalpageCuz{
     margin-top: 3em;
 }
 
-.internalpage article:not(:first-of-type){
+.visualDes div{
+    width:60%;
+    margin:auto;
+    display: grid;
+    align-content: center;
+    gap:50px;
+}
+
+.visualDes div:first-child{
+    width:45%;
+}
+
+.internalpage article:not(:first-of-type), .internalpageCuz article:not(:first-of-type){
     margin: 6em 0em;
 }
 
-.internalpage, .content{
+.internalpage, .content, .internalpageCuz{
     width: 60%;
 }
 
-.internalpage article:first-of-type{
+.internalpage article:first-of-type, .internalpageCuz article:first-of-type{
     margin-bottom: 2em;
 }
 
-.internalpage article h3{
+.internalpage article h3, .internalpageCuz article h3{
     margin-bottom:2px;
 }
 
@@ -235,6 +276,14 @@ img{
     margin-left: auto;
     margin-right: auto;
     list-style-position: inside;
+}
+
+.research li{
+    font-weight:bold;
+}
+
+#venTable tr{
+    height:40px;
 }
 
 .highfid div{
@@ -250,10 +299,15 @@ img{
     border-radius: 16px;
 }
 
-.highfidVenmo div, .highfidCuz div{
+.highfidVenmo div{
     width:100%;
     height:auto;
     margin:16px 0px;
+}
+
+.highfidCuz div{
+    margin-bottom:50px;
+    gap:50px;
 }
 
 .highfidVenmo, .highfidCuz{
@@ -279,6 +333,10 @@ img{
     margin: auto;
 }
 
+.internalpageCuz img{
+    margin: auto;
+}
+
 .bottomnavbar nav ul{
     padding-left: unset;
     display: flex;
@@ -295,22 +353,25 @@ img{
     text-decoration: none;
 }
 
-li img{
-    width: 42px;
-    height: auto;
-}
-
 .mainpage img{
     transition: 0.5s;
     width:95%;
+}
+
+.more img{
+    transition: 0.5s;
 }
 
 .more div:last-child{
     text-align: right;
 }
 
-.mainpage img:hover{ 
+.mainpage img:hover, .more img:hover{ 
     scale: 1.02;
+}
+
+.critique{
+    margin-bottom: 6em;
 }
 
 .mainpage article{
@@ -318,19 +379,48 @@ li img{
 }
 
 .button{
+    border-color: #002A47;
     border: 1px solid;
     border-radius: 8px;
 }
 
-.button:hover{
-    background-color: #D6F5FF;
+.CarbSol{
+    background-color:rgb(226, 243, 220);
+}
+
+.VenSol{
+    background-color:rgb(243, 250, 255);
+}
+
+.cuzSol{
+    padding: 30px 40px;
+    background-color:rgb(241, 247, 237);
+}
+
+.solution{
+    padding: 30px 40px;
+    border-radius: 8px;
+}
+.solution h2, .VenSol p{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.cuzSol p{
+    margin-top:unset;
+}
+
+.button:hover, footer > nav ul li a:hover{
+    background-color: #EDFBFF;
+    color:#002A47;
 }
 
 .button a{
     text-decoration: none;
     list-style-type: none;
-    color:rgb(35, 35, 35)
+    color:#002A47;
 }
+
 
 .more h2{
     margin:0;
@@ -377,8 +467,8 @@ li img{
 }
 
 #headVen{
-    background-image: url(images/venmo/venmo.jpg);
-
+    background-image: url(images/venmo/diagonalmockup.png);
+    background-position: 0 -30px;
 }
 
 #headCuz{
@@ -414,6 +504,25 @@ li img{
     height:250px;
 }
 
+.blocks{
+    display:block;
+    width:100%;
+    height:70%;
+}
+
+
+.blocks img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.more{
+    width:80%;
+    margin:auto;
+}
+
+
 .imgFoot img{
     width:100%;
     height:100%;
@@ -431,14 +540,52 @@ li img{
 
 .otherProj{
     text-align: center;
-    margin: 100px 0 150px 0;
+    margin: 100px 0 100px 0;
 }
 
 .otherProj h2{
     margin-bottom: unset;
 }
 
+.break ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    width:25%;
+    border: 1px solid;
+    border-radius:16px;
+    padding:20px;
+}
+
+.break ul li img{
+    height:auto;
+    width:100%;
+    border-radius: 8px;
+}
+
+.break ul li p{
+    margin-bottom:unset;
+}
+
 @media only screen and (min-width: 600px) {
+
+    .story{
+        display:flex;
+    }
+
+    .story h2{
+        width:150%;
+    }
+
+    #portrait img{
+        margin-left:50px;
+    }
+
+    .break ul{
+        display:flex;
+        gap:20px;
+        padding:unset;
+    }
+
     header{
         display: flex;
         height:100px;
@@ -447,7 +594,7 @@ li img{
     .navbar ul {
         list-style-type: none;
         display: flex; 
-        padding: 8px 5px;
+        padding: 10px 5px;
         border: 1px solid;
         border-radius: 8px;
     }
@@ -503,7 +650,7 @@ li img{
     .column > img{
         width: 100%;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     
     .column > p{
@@ -513,17 +660,14 @@ li img{
     .intro{
         display: flex;
         justify-content: center;
-        gap:40px;
+        gap:120px;
     }
 
     .intro img{
-        border-radius: 50%;
-        display: block;
-        margin-left: auto;
-        width:300px;
-        height: 300px;
+
+        width: 100%;
+        height: auto;
         object-fit: cover;
-        margin-right:20%;
     }
 
     .intro div:first-child{
@@ -550,14 +694,9 @@ li img{
         width: 90%;
     }
 
-    #midfi{
-        width: 40%;
-        height: auto;
-    }
-
     #pillars{
         display: flex;
-        gap:50px;
+        gap:100px;
         margin-top:16px;
     }
 
@@ -593,10 +732,13 @@ li img{
 
     .more{
         display:flex;
-        justify-content: space-between;
-        width:80%;
+        width:64%;
         margin:auto;
         gap:65px;
+    }
+
+    .more div{
+        width:100%;
     }
 
     .paragraph div{
@@ -642,13 +784,48 @@ li img{
     }
     
 
-    .visualDes{
+    .visualDes, .cuzImg{
         display:flex;
+    }
+
+    .cuzImg{
+        width:75%;
+        height: 25%;
+        margin:auto;
+    }
+
+    .cuzImgDec{
+        width:80%;
+        display:block;
+        margin:auto;
     }
 
     .stats{
         margin:unset;
         display:flex;
+    }
+
+    .statsCuz{
+        width:80%;
+        gap:50px;
+        margin:auto;
+    }
+
+    .funct{
+        width:75%;
+    }
+
+    .gif{
+        width:115%;
+    }
+
+    #initalDes{
+        display: flex;
+        gap:50px;
+    }
+
+    #col2{
+        width:200%;
     }
 
 }
