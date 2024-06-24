@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight:400;
 }
 
@@ -111,14 +111,9 @@ li a{
     margin-top:unset;
 }
 
-
 .description{
     width: 80%;
     margin: auto;
-}
-
-.description div{
-    width:50%;
 }
 
 .mainpage article a{
@@ -128,7 +123,6 @@ li a{
 
 .imgContain{
     margin:auto;
-    width:80%;
     height:500px;
 }
 
@@ -137,7 +131,6 @@ li a{
     height:100%;
     object-fit: cover;
 }
-
 
 footer{
     background-image: url("images/footer2.svg");
@@ -164,8 +157,6 @@ footer > nav ul li a{
     border-radius: 8px;
 }
 
-
-
 footer > h2, footer > ul{
     width: 80%;
     margin: auto;
@@ -179,7 +170,7 @@ footer > h2, footer > ul{
 }
 
 #about h3{
-    margin-bottom:0px;
+    margin-bottom:16px;
     margin-top: 3em;
 }
 
@@ -208,7 +199,6 @@ footer > h2, footer > ul{
 
 body{
     animation: fadeIn ease-in 1s;
-    
 }
 
 #resume > article > h3, #resume > article >p, #resume > article >h4{
@@ -362,9 +352,6 @@ img{
     transition: 0.5s;
 }
 
-.more div:last-child{
-    text-align: right;
-}
 
 .mainpage img:hover, .more img:hover{ 
     scale: 1.02;
@@ -375,7 +362,7 @@ img{
 }
 
 .mainpage article{
-    margin-bottom:10%;
+    margin-bottom:30%;
 }
 
 .button{
@@ -432,14 +419,13 @@ img{
 }
 
 .moreButton{
-    display:flex;
     align-items: center;
-
 }
 
 .moreButton p{
     margin-left:auto;
     padding: 3px 15px;
+    text-align: center;
 }
 
 #theVideo{
@@ -489,20 +475,6 @@ img{
     margin-bottom: 30px;
 }
 
-.imgFoot{
-    display:flex;
-    width:50%;
-    margin:auto;
-    justify-content: center;
-    gap:50px;
-    padding-top:25px;
-}
-
-.imgFootContain{
-    display: flex;
-    width:250px;
-    height:250px;
-}
 
 .blocks{
     display:block;
@@ -522,7 +494,6 @@ img{
     margin:auto;
 }
 
-
 .imgFoot img{
     width:100%;
     height:100%;
@@ -540,20 +511,24 @@ img{
 
 .otherProj{
     text-align: center;
-    margin: 100px 0 100px 0;
+    margin: 100px auto;
+    width:80%;
 }
 
-.otherProj h2{
-    margin-bottom: unset;
+.imgFoot div{
+    margin-bottom:32px;
 }
 
 .break ul li{
     list-style-type: none;
-    margin-bottom: 10px;
-    width:25%;
+    margin-bottom: 20px;
     border: 1px solid;
     border-radius:16px;
     padding:20px;
+}
+
+.break ul {
+    padding-left:0;
 }
 
 .break ul li img{
@@ -566,7 +541,61 @@ img{
     margin-bottom:unset;
 }
 
+#pillars > div > p{
+    margin-top:8px;
+}
+
+.moreButton h1{
+    margin-bottom:8px;
+}
+
+.more div{
+    margin-bottom:30%;
+}
+
 @media only screen and (min-width: 600px) {
+
+    #userPerDescrip{
+        display:flex;
+        gap:50px;
+    }
+
+    .mainpage article{
+        margin-bottom:10%;
+    }
+
+    .more div:last-child{
+        text-align: right;
+    }
+
+    .moreButton{
+        display:flex;
+
+    }
+
+    .imgContain{
+        width:80%;
+
+    }
+
+    .imgFoot{
+        display:flex;
+        width:50%;
+        margin:auto;
+        justify-content: center;
+        gap:50px;
+        padding-top:25px;
+    }
+    
+    .imgFootContain{
+        display: flex;
+        width:250px;
+        height:250px;
+    }
+
+    .break ul li{
+        width:25%;
+    }
 
     .story{
         display:flex;
@@ -766,7 +795,6 @@ img{
     .theproblem{
         display:flex;
         gap:20px;
-
     }
 
     .theproblem h2{
