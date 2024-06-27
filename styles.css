@@ -39,7 +39,7 @@ p, li{
     font-size:14pt;
 }
 
-p, nav, ul, time, blockquote, div li, table{
+p, nav, ul, ol, time, blockquote, div li, table{
     font-family: 'Nunito', sans-serif;
     line-height: 1.5em;
 }
@@ -459,7 +459,10 @@ img{
 
 #headCuz{
     background-image: url(images/cuzen.png);
+}
 
+#headPet{
+    background-image: url(images/petpulse/cover.jpg);
 }
 
 .top h3, .top p{
@@ -553,13 +556,26 @@ img{
     margin-bottom:30%;
 }
 
+.innerP{
+    margin:72px 0px;
+}
+
+.innerP img{
+    width:100%;
+}
+
+#shrink img{
+    width:80%;
+}
+
+
 @media only screen and (min-width: 600px) {
 
     .more div{
         margin-bottom:0;
     }
 
-    #userPerDescrip{
+    .userPerDescrip{
         display:flex;
         gap:50px;
     }
@@ -791,9 +807,20 @@ img{
         }
     }
 
-    .leftAlgin, .rightAlgin{
+    .align{
         display:flex;
         align-items: center;
+    }
+
+    .petpulseGif img{
+        width:250px;
+        height:auto;
+    }
+
+    .petpulseGif{
+        gap:50px;
+        margin:0 auto 100px auto;
+        
     }
 
     .theproblem{

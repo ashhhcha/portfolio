@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Pulse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Ashley</a></h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">works</a></li>
+                <li><a href="resume.html">resume</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="headerimg" id="headPet">
+        <!-- <img src="images/carbonology.jpg" alt="carbonology"> -->
+    </div>
+    <section class="internalpage">
+            
+        <article class="top">  
+            <div class="summary">
+                <h1>Pet Pulse</h1>
+                <p>All paper records, scattered digital files, and pet health information can be consolidated into a single app with Pet Pulse. The initial prompt was to create an integrated platform to simplify healthcare for pet owners. Through rigorous research and analysis, our team informed the design and development of an interactive prototype facilitating seamless management of pet healthcare records and appointments. This user-centered approach ensures that our solution meets the diverse needs of pet owners while enhancing accessibility to vital veterinary services.</p>
+                <p><b>Award</b>: Best Overall Design</p>
+            </div>
+            <aside>
+                <div>
+                    <h4>Role</h4>
+                    <p>Mid-fi sprint lead</p>
+                </div>
+                <div>
+                    <h4>Time</h4>
+                    <p>6 weeks</p>
+                </div>
+                <div>
+                    <h4>Team</h4>
+                    <p>Karen Dang (Project Manager), Dheeksha Mageswaran, Katherine Ong, Kim Luong</p>
+                </div>
+                
+            </aside>
+        </article>
+        <article>
+            <h2>Timeline</h2>
+            <p>To ensure our project's deadline, our team mapped out the design process to help keep track of our progress.</p>
+            <img src="images/petpulse/timline.png" alt="timeline of project">
+        </article>
+        <article>
+            <h2>User Research</h2>
+            <p>Our team employed a multi-faceted approach to gather insights into the challenges faced by pet owners in managing pet healthcare.</p>
+
+            <div>
+                <h3>Research Goals</h3>
+                <p>Our primary goals were to:</p>
+                <ul>
+                    <li>Identify user pain points in managing pet healthcare</li>
+                    <li>Understand user preferences and behaviors in utilizing digital platforms for pet healthcare</li>
+                    <li>Develop design principles for an intuitive and user-friendly interface</li>
+                </ul>
+                <p>We began with a thorough literature review to understand existing research on pet healthcare and identify common user pain points. Subsequently, we conducted brainstorming sessions and affinity mapping exercises to formulate targeted research questions.</p>
+            </div>
+            
+            <div class="innerP">
+                <h3>Competitive Analysis</h3>
+                <img src="images/petpulse/compan.jpg" alt="competitve analysis">
+                <p>To collect data, we distributed surveys to 50 pet owners and conducted in-depth interviews with 8 participants. During these interviews, participants were given behavioral tasks navigating the UC Davis Vet Hospital website to observe their processes in making appointments and accessing pet health information.</p>
+            </div>
+            
+            <div class="innerP">
+                <h3>Survey says...</h3>
+                <img src="images/petpulse/research.jpg">
+                <h3>Hard Data Obtained</h3>
+                <p>From our surveys and interviews, we gathered quantitative and qualitative data on several key metrics:</p>
+                <ul>
+                    <li>Percentage of pet owners struggling with medical record keeping</li>
+                    <li>Preference percentages between telemedicine and physical check-ups</li>
+                    <li>User satisfaction ratings and pain points regarding current veterinary interfaces</li>
+                </ul>
+            </div>
+            <div class="innerP">
+                <h3>Key Takeaways</h3>
+                <ol>
+                    <li><b>User Pain Points</b>: Identified significant challenges including difficulties in record keeping, variations in experience between telemedicine and physical visits, and complexities in accessing pet healthcare information.</li>
+                    <li><b>Design Priorities</b>: Emphasized the importance of creating a streamlined interface that minimizes sensory overload and enhances usability for users of varying ages and technical proficiencies.</li>
+                </ol>
+            </div>
+            
+
+            <div class="innerP">
+                <img src="images/petpulse/persona.png" alt="user personas">
+                <h3>Demographic Makeup</h3>
+                <p>Participants in our research varied in terms of age, occupation, educational background, and pet ownership demographics. This diversity allowed us to capture a broad spectrum of perspectives and tailor our design solutions accordingly.</p>
+            </div>
+            
+        </article>
+        <article>
+            <div>
+                <h2>Ideation</h2>
+                <img src="images/petpulse/sketches.png" alt="sketches">
+                <h3>Sketches</h3>
+                <p>With ideas surrounding decreasing stress and increasing efficiency in pet healthcare, we created sketches of potential screens for record keeping, clinic finding, appointment scheduling, pet profile editing, and vet messaging.</p>
+            </div>
+
+            <div class="innerP">
+                <h3>&#9995; Pause!</h3>
+                <p>Pet health is a broad topic, and there was <b>difficulty narrowing</b> down the direction we wanted the app to go in. After much discussion, we changed our original How Might We Statement to fit the findings of the surveys and interviews more. Key features like record keeping, appointment scheduling, and vet messaging made it to later iterations - however, we decided to reduce our focus on the clinic finding aspect, as we felt that kind of research was not central to our app's purpose. Another simplification included consolidating pet profile editing to the home page alongside important notifications.</p>
+            </div>
+            
+        </article>
+        <article>
+            <img src="images/petpulse/flow.png" alt="task flow">
+            <h3>Task Flows</h3>
+            <p>From our surveys and interviews, we were able to pinpoint several key goals to center our user flows around. We wanted to reduce how much pet owners have to manually input data before scheduling appointments, so that step is easily completed in onboarding and pet profile editing. That way, emergency appointments, reschedules, and cancellations can be done in minutes with autofilled info.</p>
+            <p>To boost transparency and communication between pet owner and their vets, medical files tracking conditions, lab results, vaccinations, and more can be uploaded and organized in records. Any other questions, comments, and concerns can be addressed directly in messages accessible from the home screen. With these key features in mind, we split our app into onboarding and three main pages, including a centralized home page, medical records, and appointments.</p>
+            <img src="images/petpulse/features.png" alt="features">
+        </article>
+
+
+        <article>
+            <img src="images/petpulse/hmw.jpg" alt="how might we statement">
+        </article>
+        <article>
+            <h2>Mid-fi Prototyping</h2>
+            <img src="images/petpulse/midfi.png" alt="mid fi prototype">
+            <h3>Sketches to Figma</h3>
+            <p>To visualize the features and elements needed to address the problem, we worked through our sketches in Figma. We created an onboarding process to set up an account for the user and pet information, with the option to link a veterinarian clinic and pet insurance. The home page serves as a hub for users to view upcoming vet appointments, access their pet profiles, and learn about their pet health and vet services. Within the app, the user can easily schedule an appointment with a veterinarian clinic. Medical records exchanged with the veterinarian are also uploaded and received by the user.</p>
+        
+            <div class="innerP">
+                <h3>Usability Testing</h3>
+                <p>For usability testing, we wanted to analyze any pain points and the overall user experience of the following tasks:</p>
+                <ul>
+                    <li>Complete onboarding process</li>
+                    <li>View, reschedule, and cancel appointments</li>
+                    <li>View vaccinations</li>
+                    <li>View and add medical records of specific pets</li>
+                </ul>
+                <p>We conducted 8 usability tests, with all of the participants being students, ages 19-22.From these tests we learned:</p>
+                <img src="images/petpulse/feedback.png" alt="user testing feedback">
+            </div>
+            
+            <div class="innerP">
+                <h3>A/B Testing</h3>
+                <p>After implementing changes in our prototype to reflect our findings from usability testing, we wanted to understand user preferences on the following features:</p>
+                <ul>
+                    <li>Viewing a particular medical record</li>
+                    <li>Rescheduling/canceling an appointment</li>
+                    <li>Placement pop-up for additional vaccine information</li>
+                </ul>
+                <p>We conducted A/B Testing with 11 participants by having them vote between different visual representations for each of these tasks and implemented their feedback into our final design.</p>
+                <div id="shrink">
+                    <img src="images/petpulse/abtest.png" alt="ab testing">
+
+                </div>
+            </div>
+
+            <div class="innerP">
+                <h3>Implementing Usability Testing Findings into the Prototype</h3>
+                <p>Incorporating usability testing findings into the prototype was a critical step in ensuring our design met the needs and preferences of pet owners. Some of the findings included preferences for button placement, readability concerns with login screens, and the desire for a minimalistic yet professional aesthetic.</p>
+            </div>
+
+            <div class="innerP">
+                <h3>Transitioning from Mid-fi to Hi-fi</h3>
+                <p>The mid-fi prototypes provided a foundational understanding of user flows and interaction patterns. As we progressed to hi-fi prototypes, our focus shifted to refining visual details, ensuring consistency across design elements, and enhancing the overall aesthetic appeal and usability of the app.</p>
+                <p>The biggest difference in transitioning to hi-fi prototypes was the level of detail and fidelity in design elements. We implemented the same components, colors, alignments, and typography styles across all screens to maintain visual coherence and reinforce brand identity. This consistency was crucial in establishing a unified user experience and reinforcing the professional image of the app.</p>
+            </div>
+         
+        </article>
+        <article>
+            <img src="images/petpulse/designsystem.png" alt="design systems">
+            <h3>Creating the Design System</h3>
+            <p>Our design system was developed based on a thorough understanding of user preferences, usability principles, and industry standards. We chose a color palette predominantly influenced by medical affiliations, utilizing shades of blue to convey trust and professionalism. This choice was inspired by successful medical institutions like Kaiser Permanente and UCSF, which use blue as a primary color.</p>
+            <p>Additionally, we embraced a minimalist approach to reduce visual clutter and cognitive load. Accent colors were strategically employed to highlight actionable elements such as buttons, ensuring intuitive navigation and clear visual hierarchy. The incorporation of off-white tones further contributed to a softer, less straining brightness level for prolonged use.</p>
+
+        </article>
+        <article>            
+            <h2>High Fidelity Prototyping</h2>
+            <div class="align petpulseGif">
+                <img src="images/petpulse/onboarding.gif" alt="onboarding">
+                <div>
+                    <h3>Onboarding</h3>
+                    <ul>
+                        <li>Sign up and create an account to link to the veterinary clinics</li>
+                        <li>Enter in your pet information to autofill for later appointments</li>
+                        <li>Connect a clinic and pet insurance to your account (optional)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="align petpulseGif">
+                <img src="images/petpulse/vacc1.gif" alt="vaccination page gif">
+                <div>
+                    <h3>Home Screen</h3>
+                    <ul>
+                        <li>View all upcoming appointments and schedule new ones
+                        </li>
+                        <li>View pet profile with up-to-date diagnosis, prescriptions, vaccinations, and surgeries/procedures
+                        </li>
+                        <li>Contact primary pet healthcare providers</li>
+                    </ul>
+                </div>
+                <img src="images/petpulse/msgs.gif" alt="messages gif">
+            </div>
+
+            <div class="align petpulseGif">
+                <img src="images/petpulse/appt1.gif" alt="appointments gifs">
+                <div>
+                    <h3>Appointments</h3>
+                    <ul>
+                        <li>View all upcoming appointments and schedule new ones</li>
+                        <li>Date and time picker with transparent view of vet availability</li>
+                        <li>Auto-filled pet and personal information for streamlined scheduling process</li>
+                        <li>Reschedule and cancel previously made appointments</li>
+                    </ul>
+                </div>
+                <img src="images/petpulse/appt2.gif" alt="appointments gifs">
+            </div>
+
+            <div class="align petpulseGif">
+                <img src="images/petpulse/medical records.gif" alt="medical records">
+                <div>
+                    <h3>Medical Records</h3>
+                    <ul>
+                        <li>Easily locate, sort, and manage medical records</li>
+                        <li>Add medical records for specific pets for quick communication between veterinarian and pet owner</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </article>
+        <article>
+            <h2>Presentation day!</h2>
+            <img src="images/petpulse/groupphoto.jpg" alt="group photo at presentation day">
+            <p>Presentation day was a whirlwind of emotions: relief for being done but sadness for letting go of such a powerful quarter. Seeing not just our team but all of the cohorts dressed up and antsy in their seats was like a scene from a movie, this was a day we never really imagined reaching.</p>
+
+            <p>We were judged by Neha Deshmukh, a UX Designer at Amazon. Her feedback was incredibly valuable, emphasizing our research strengths and guiding us to refine problem definition when implementing educational aspects of the app.</p>
+        </article>
+    </section>
+    
+        <article class="reflection">
+            <div class="content">
+                <h2>Reflection</h2>
+                <div class="paragraph">
+                    <div>
+                        <h4>Narrow the scrope</h4>
+                        <p>In the ideation phase of this project, I had difficulties identifying the design's purpose. Healthcare is a broad category, and our team could tackle different aspects of the topic. By continuously revisiting and focusing on the results from the surveys and interviews, I established a clearer direction for the app.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Team communication</h4>
+                        <p>With a broad topic and 6-week deadline, communication between team members was important throughout the design process. We made sure to discuss our action items and progress during meetings to ensure everyone was aligned with the project's direction and goals.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+
+    <article class="otherProj">
+        <h2>take a look at my other projects!</h2>
+        <div class="imgFoot">
+            <div>
+                <a href="carbonology.html" class="imgFootContain"><img src="images/carbonology/carbonologyMockup.png"></a>
+                <h4><a href="carbonology.html">Carbonology</a></h4>                
+            </div>
+            <div>
+                <a href="cuzen.html" class="imgFootContain"><img src="images/cuzen.png"></a>
+                <h4><a href="cuzen.html">Cuzen Matcha</a></h4> 
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <h2>Come chat with me!</h2>
+        <nav>
+            <ul>
+                <li><a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/ash-chang/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
