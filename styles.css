@@ -465,6 +465,10 @@ img{
     background-image: url(images/petpulse/cover.jpg);
 }
 
+#headThesis{
+    background-image: url(images/thesis/mockup.png);
+}
+
 .top h3, .top p{
     margin:0;
 }
@@ -568,8 +572,53 @@ img{
     width:80%;
 }
 
+.visDes > div{
+    margin: 32px 0;
+}
+
+.set p{
+    margin-bottom:0;
+}
+
+.set h3{
+    margin-top:0;
+}
+
+.theGif img{
+    width:250px;
+}
+
 
 @media only screen and (min-width: 600px) {
+
+    .set{
+        display:flex;
+        gap:72px;
+        align-items: center;
+    }
+
+    .set div{
+        width:50%;
+    }
+    .set img{
+        width:70%;
+    }
+
+    .userPerDescrip div p{
+        height:18%;
+    }
+
+    .innerP3{
+        width:40%;
+        display:block;
+        margin:auto;
+    }
+
+    .innerP2 img{
+        width:30%;
+        display:block;
+        margin:auto;
+    }
 
     .more div{
         margin-bottom:0;
@@ -590,7 +639,6 @@ img{
 
     .moreButton{
         display:flex;
-
     }
 
     .imgContain{
