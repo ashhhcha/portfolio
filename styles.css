@@ -151,7 +151,7 @@ footer > nav ul {
 }
 
 footer > nav ul li a{
-    padding: 3px 15px;    
+    padding: 4px 16px;    
     text-decoration: none;
     border: 1px solid;
     border-radius: 8px;
@@ -167,6 +167,7 @@ footer > h2, footer > ul{
     padding: 10px;
     width:80%;
     margin:auto;
+    margin-bottom:50px;
 }
 
 #about h3{
@@ -525,14 +526,21 @@ img{
 
 .break ul li{
     list-style-type: none;
-    margin-bottom: 20px;
-    border: 1px solid;
-    border-radius:16px;
-    padding:20px;
+    margin: 0px 20px;
+
 }
 
-.break ul {
+.break {
     padding-left:0;
+    border: 1px solid;
+    border-radius:16px;
+    padding:26px;
+    
+}
+
+.break h2{
+    margin-top:unset;
+    margin-bottom:20px;
 }
 
 .break ul li img{
@@ -543,6 +551,7 @@ img{
 
 .break ul li p{
     margin-bottom:unset;
+    margin-top:8px;
 }
 
 #pillars > div > p{
@@ -583,6 +592,16 @@ img{
 
 .theGif img{
     width:250px;
+}
+
+.portrait2 img{
+    width:60%;
+    display: block;
+    margin:auto;
+}
+
+.portrait2 > h2{
+    text-align: center;
 }
 
 
@@ -667,9 +686,15 @@ img{
         display:flex;
     }
 
-    .story h2{
-        width:150%;
+    .story div{
+        width:80%;
     }
+
+    .story h2{
+        margin-bottom:8px;
+    }
+
+    
 
     #portrait img{
         margin-left:50px;
