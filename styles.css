@@ -629,14 +629,14 @@ img{
     box-shadow: 0px 11px 49px -6px rgba(0,0,0,0.1);
 }
 
+.graphic{
+    margin-bottom:100px;
+}
+
 @media only screen and (min-width: 600px) {
 
     .graphic h2{
         text-align: center;
-    }
-
-    .graphic{
-        margin-bottom:72px;
     }
 
     #des115{
