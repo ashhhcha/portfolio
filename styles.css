@@ -602,8 +602,74 @@ img{
     text-align: center;
 }
 
+.imgWrap:hover .imageDescrip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.imgWrap{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.imageDescrip{
+    position: absolute;
+    bottom: 5%;
+    left:12%;
+    color: #ffffff;
+    padding:8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+    width:70%;
+}
+
+.shadow{
+    box-shadow: 0px 11px 49px -6px rgba(0,0,0,0.1);
+}
 
 @media only screen and (min-width: 600px) {
+
+    .graphic h2{
+        text-align: center;
+    }
+
+    .graphic{
+        margin-bottom:72px;
+    }
+
+    #des115{
+        display:flex;
+        gap:50px;
+        justify-content: center;
+    }
+
+    #des115 img{
+        width:50%;
+    }
+
+    #office{
+        display:flex;
+        gap:50px;
+        justify-content: center;
+    }
+
+    #office img{
+        width:40%;
+        height:fit-content;
+    }
+
+    .sm{
+        display:flex;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .sm img{
+        width:30%;
+        height:fit-content;
+    }
 
     .set{
         display:flex;
