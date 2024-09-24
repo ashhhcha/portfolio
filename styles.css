@@ -989,6 +989,10 @@ img{
         margin:auto;
     }
 
+    .cuzImg img{
+        width:50%;
+    }
+
     .cuzImgDec{
         width:80%;
         display:block;
