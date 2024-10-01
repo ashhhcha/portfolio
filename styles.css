@@ -633,6 +633,10 @@ img{
     margin-bottom:100px;
 }
 
+.extraSpace li{
+    margin-bottom: 1em;
+}
+
 @media only screen and (min-width: 600px) {
 
     .graphic h2{
