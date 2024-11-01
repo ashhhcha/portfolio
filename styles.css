@@ -629,7 +629,7 @@ img{
     width:70%;
 }
 
-#office > img, #middleSmImg, .cmsi img, #des115 > img, .imgContain, .imgContain2{
+#office > img, #middleSmImg, .cmsi img, #des115 > img{
     box-shadow: 0px 11px 49px -6px rgba(0,0,0,0.1);
 }
 
