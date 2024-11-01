@@ -1,10 +1,14 @@
-header, section{
+header{
     margin: auto;
     width: 80%; 
 }
 
+section{
+    margin: 0 20px 0 20px;
+}
+
 header h1{
-    font-size: 24pt;
+    font-size: 29pt;
     text-transform: uppercase;
 
 }
@@ -85,6 +89,10 @@ li a{
     padding: 5px 20px;
 }
 
+.navbar li {
+    padding:4px;
+}
+
 .description, #skills{
     padding-bottom: 50px;
 }
@@ -93,11 +101,6 @@ li a{
     justify-content: left;
 }
 
-.sectdiv p{
-    margin-left: auto;
-    align-self: center;
-    text-align: right;
-}
 
 .thoughts{
     width:60%;
@@ -111,12 +114,7 @@ li a{
 }
 
 .description{
-    width: 80%;
     margin: auto;
-}
-
-.mainpage article a{
-    display: block;
 }
 
 .imgContain{
@@ -132,10 +130,10 @@ li a{
 footer{
     background-image: url("images/footer2.svg");
     background-size: cover;
-    padding: 50px; 
     margin: 30px 0 0 0;
     background-position: right bottom;
     height:150px;
+    padding-bottom:30px;
 }
 
 footer > nav ul {
@@ -162,8 +160,6 @@ footer > h2, footer > ul{
 }
 
 #about > article{
-    padding: 10px;
-    width:80%;
     margin:auto;
     margin-bottom:50px;
 }
@@ -175,6 +171,7 @@ footer > h2, footer > ul{
 
 #about {
     width:80%;
+    margin:auto;
 }
 
 #resume > h2:first-child{
@@ -244,10 +241,6 @@ img{
     margin: 6em 0em;
 }
 
-.internalpage, .content, .internalpageCuz{
-    width: 60%;
-}
-
 .internalpage article:first-of-type, .internalpageCuz article:first-of-type{
     margin-bottom: 2em;
 }
@@ -310,7 +303,6 @@ img{
 
 .content{
     color: white;
-    width: 60%;
     margin: auto;
     padding: 20px;
 }
@@ -345,6 +337,7 @@ img{
 .mainpage img{
     transition: 0.5s;
     height:100%;
+    border-radius: 8px;
 }
 
 .more img{
@@ -394,6 +387,7 @@ img{
     background-color: #EDFBFF;
     color:#002A47;
     border-color: #0097c1;
+    /* border-color: #EDFBFF; */
 }
 
 .button a{
@@ -485,15 +479,11 @@ img{
     align-items: center;
 }
 
-.imgContain, .imgContain2{
-    border-radius: 8px;
-}
-
-
 .blocks img{
     width:100%;
     height:100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .more{
@@ -528,16 +518,22 @@ img{
 
 .break ul li{
     list-style-type: none;
-    margin: 0px 20px;
+    margin-bottom: 32px;
+}
 
+.break ul li:last-of-type{
+    margin-bottom:0;
+}
+
+.break ul{
+    margin-bottom:0;
 }
 
 .break {
     padding-left:0;
     border: 1px solid;
     border-radius:16px;
-    padding:26px;
-    
+    padding:26px; 
 }
 
 .break h2{
@@ -650,7 +646,67 @@ img{
     margin-bottom: 1em;
 }
 
+.button a{
+    display:block;
+    text-align:center;
+}
+
+.mainpage article a{
+    display: block;
+}
+
+.imgContain, .imgContain2{
+    border-radius: 8px;
+}
+
+#whoAmI{
+    display:flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+#whoAmI h2{
+    margin-bottom:0px;
+}
+
+.break ul{
+    padding-left:0;
+}
+
 @media only screen and (min-width: 600px) {
+
+    footer{
+        padding: 50px; 
+    }
+
+    #whoAmI{
+        display: block;
+    }
+
+    #whoAmI h2{
+        margin-bottom:8px;
+        margin-top:18px;
+    }
+
+    #about > article{
+        width:80%;
+        padding: 10px;
+    }
+
+    .internalpage, .content, .internalpageCuz{
+        width: 60%;
+    }
+
+    .sectdiv p{
+        margin-left: auto;
+        align-self: center;
+        text-align: right;
+    }
+
+    section{
+        margin: auto;
+        width: 80%; 
+    }
 
     .graphic h2{
         text-align: center;
@@ -779,6 +835,7 @@ img{
 
     .break ul li{
         width:25%;
+        
     }
 
     .story{
@@ -836,6 +893,7 @@ img{
 
     .description{
         display:flex;
+        width: 80%;
         justify-content: center;
     }
 
