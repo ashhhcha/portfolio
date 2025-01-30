@@ -19,6 +19,7 @@ header h1{
     display:flex;
     align-items: center;
     gap:24px;
+    justify-content: center;
 }
 
 
@@ -80,6 +81,10 @@ p, li{
 p, ul, ol, nav, time, blockquote, div li, table{
     font-family: "Instrument Sans", serif;    
     line-height: 1.5em;
+}
+
+.description nav ul li{
+    margin-bottom:8px;
 }
 
 blockquote{
@@ -191,6 +196,7 @@ li a{
 .mainpage article a img{
     overflow: hidden;
     object-fit: cover;
+    border-radius: 24px;
 }
 
 footer{
@@ -198,7 +204,6 @@ footer{
     background-size: cover;
     margin: 30px 0 0 0;
     background-position: right bottom;
-    /* height:150px; */
     padding-bottom:30px;
 }
 
@@ -224,6 +229,7 @@ footer section{
     align-items: center;
     gap:10px;
     margin-bottom:16px;
+    justify-content: center;
 }
 
 #about > article{
@@ -404,7 +410,6 @@ img{
 .mainpage img{
     transition: 0.5s;
     height:100%;
-    /* border-radius: 32px; */
 }
 
 .more img{
@@ -459,8 +464,6 @@ img{
 
 .mainpage h1{
     width:80%;
-    margin:auto;
-    padding-bottom: 32px;
 }
 
 .more h2{
@@ -546,12 +549,11 @@ img{
     width:100%;
     height:100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 24px;
 }
 
 .more{
-    width:80%;
-    margin:auto;
+    margin:0 20px;
 }
 
 .imgFoot img{
@@ -621,10 +623,6 @@ img{
 
 .moreButton h1{
     margin:0;
-}
-
-.more div{
-    margin-bottom:30%;
 }
 
 .innerP{
@@ -731,16 +729,34 @@ img{
     padding-left:0;
 }
 
+ 
+.footerNav{
+    display: flex;
+    justify-content: center;
+    margin-bottom:72px;
+    text-align: center;
+}
+
+.more > div:first-of-type{
+    margin-bottom: 72px;
+}
+
+
+
 @media only screen and (min-width: 600px) {
 
     footer{
         padding: 50px; 
     }
 
-    .footerNav{
-        display: flex;
-        justify-content: center;
-        margin-bottom:72px;
+    .contactSect{
+        display:flex;
+
+        justify-content: unset;
+    }
+
+    footer section{
+        justify-content: unset;
     }
 
     #whoAmI{
@@ -850,6 +866,8 @@ img{
 
     .more div{
         margin-bottom:0;
+        width:100%;
+
     }
 
     .userPerDescrip{
@@ -859,6 +877,11 @@ img{
 
     .mainpage article{
         margin-bottom:10%;
+    }
+
+    .mainpage h1{
+        margin:auto;
+        padding-bottom: 32px;
     }
 
     .more div:last-child{
@@ -1074,10 +1097,6 @@ img{
         width:64%;
         margin:auto;
         gap:65px;
-    }
-
-    .more div{
-        width:100%;
     }
 
     .paragraph div{
