@@ -1,6 +1,9 @@
 header{
     margin: auto;
-    width: 80%; 
+    /* width: 80%;  */
+    text-align: center;
+    /* border-bottom: 1px solid #007EA8; */
+
 }
 
 section{
@@ -10,12 +13,30 @@ section{
 header h1{
     font-size: 29pt;
     text-transform: uppercase;
-
 }
 
+.contactSect{
+    display:flex;
+    align-items: center;
+    gap:24px;
+}
+
+
 /* text styling start*/
-h1, h2, h3, h4{
-    font-family: 'Work Sans', sans-serif;
+h2, h3, h4{
+    font-family: "Instrument Sans", serif;
+}
+
+nav, h1, h5, .name{
+    font-family: "Archivo", serif;
+}
+
+h5, .name{
+    font-style: italic;
+    font-size:24pt;
+    margin:0;
+    color:#007EA8;
+    font-weight: 700;
 }
 
 h1{
@@ -39,12 +60,25 @@ h4{
     font-weight:600;
 }
 
+.highlighter{
+    color:#007EA8;
+    text-align: center;
+}
+
+.highlighter2{
+    color:gray;
+}
+
+.mainpage h2{
+    margin:0 ;
+}
+
 p, li{
     font-size:14pt;
 }
 
-p, nav, ul, ol, time, blockquote, div li, table{
-    font-family: 'Nunito', sans-serif;
+p, ul, ol, nav, time, blockquote, div li, table{
+    font-family: "Instrument Sans", serif;    
     line-height: 1.5em;
 }
 
@@ -65,9 +99,6 @@ blockquote{
 
 /* text styling end*/
 
-header{
-    text-align: center;
-}
 .navbar ul, .VenSol nav ul{
     list-style-type: none;
     padding-left: unset;
@@ -75,18 +106,49 @@ header{
 
 .navbar ul li a, header h1 a{
     text-decoration: none;
-    color: black;
+    color: #007EA8;
 }
 
 li a{
     color:rgb(35, 35, 35);
 }
 
-.navbar li a:hover{
-    background-color: #EDFBFF;
-    color:#002A47;
-    border-radius: 8px;
-    padding: 5px 20px;
+#logo{
+    width: 40px;
+    height:40px;
+}
+
+#linkedIcon{
+    width:25px;
+    height:25px;
+}
+
+#emailIcon{
+    width:30px;
+    height:30px;
+}
+
+.navbar li a:hover, .button:hover{
+    text-decoration: underline 1px;
+    text-underline-offset: 4px;
+    color:#007EA8;
+}
+
+.button:hover img{
+    transform: translateX(4px);
+    transition:0.1s ;
+}
+
+.button a{
+    display:flex;
+    gap:6px;
+    width:fit-content;
+    align-items: center;
+}
+
+.arrow{
+    width:20px;
+    height:20px;
 }
 
 .navbar li {
@@ -95,6 +157,10 @@ li a{
 
 .description, #skills{
     padding-bottom: 50px;
+}
+
+.description:last-of-type{
+    padding-bottom: 0;
 }
 
 .sectdiv:last-of-type{
@@ -132,11 +198,11 @@ footer{
     background-size: cover;
     margin: 30px 0 0 0;
     background-position: right bottom;
-    height:150px;
+    /* height:150px; */
     padding-bottom:30px;
 }
 
-footer > nav ul {
+footer > div {
     list-style-type: none;
     display: flex;
     padding-left: unset;
@@ -146,17 +212,18 @@ footer > nav ul {
     margin-top:8px;
 }
 
-footer > nav ul li a{
-    padding: 4px 16px;    
-    text-decoration: none;
-    border: 1px solid;
-    border-radius: 8px;
-}
 
-footer > h2, footer > ul{
+footer h2, footer div{
     width: 80%;
     margin: auto;
     padding: 10px;
+}
+
+footer section{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom:16px;
 }
 
 #about > article{
@@ -337,7 +404,7 @@ img{
 .mainpage img{
     transition: 0.5s;
     height:100%;
-    border-radius: 8px;
+    /* border-radius: 32px; */
 }
 
 .more img{
@@ -383,21 +450,17 @@ img{
     margin-top:unset;
 }
 
-.button a:hover, footer > nav ul li a:hover{
-    background-color: #EDFBFF;
-    color:#002A47;
-    border-color: #0097c1;
-    /* border-color: #EDFBFF; */
-}
-
 .button a{
     text-decoration: none;
     list-style-type: none;
-    color:#002A47;
-    border: 1px solid #002A47;
-    border-radius: 8px;
-    padding:4px 16px;
-    transition: 0.25s ease;
+    color:#007EA8;
+    font-size:16pt;
+}
+
+.mainpage h1{
+    width:80%;
+    margin:auto;
+    padding-bottom: 32px;
 }
 
 .more h2{
@@ -420,7 +483,7 @@ img{
 }
 
 #theVideo{
-    margin-bottom:100px;
+    margin: 0 auto 100px auto;
 }
 
 #education ul{
@@ -508,7 +571,7 @@ img{
 
 .otherProj{
     text-align: center;
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
     width:80%;
 }
 
@@ -531,7 +594,7 @@ img{
 
 .break {
     padding-left:0;
-    border: 1px solid;
+    border: 1px solid #007EA8;
     border-radius:16px;
     padding:26px; 
 }
@@ -646,17 +709,12 @@ img{
     margin-bottom: 1em;
 }
 
-.button a{
-    display:block;
-    text-align:center;
-}
-
-.mainpage article a{
+.mainpage article > div > a{
     display: block;
 }
 
 .imgContain, .imgContain2{
-    border-radius: 8px;
+    border-radius: 24px;
 }
 
 #whoAmI{
@@ -677,6 +735,12 @@ img{
 
     footer{
         padding: 50px; 
+    }
+
+    .footerNav{
+        display: flex;
+        justify-content: center;
+        margin-bottom:72px;
     }
 
     #whoAmI{
@@ -815,7 +879,7 @@ img{
     .imgContain2{
         overflow:hidden;
         width:100%;
-        height:70%;
+        height:400px;
     }
 
     .imgFoot{
@@ -865,26 +929,23 @@ img{
     header{
         display: flex;
         height:100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #contactOpt{
+        padding-left:24px;
     }
 
     .navbar ul {
         list-style-type: none;
         display: flex; 
-        padding: 10px 5px;
-        border: 1px solid;
-        border-radius: 8px;
-    }
-
-    .navbar{
-        margin-left: auto;
-        align-self: center;
-        justify-content: center;
+        gap:16px;
     }
 
     .navbar ul li a{
         padding: 0px 20px;
-        text-decoration: none;
-        list-style-type: none;
+        font-size:16pt;
     }
 
     .description > div{
@@ -965,6 +1026,7 @@ img{
     aside{
         justify-content: right;
         margin-left: auto;
+        width:50%;
     }
 
     .summary{
@@ -989,22 +1051,22 @@ img{
         display: flex;
         width: 80%;
         margin: auto;
-        justify-content: center;
-        align-items: center;
+        gap: 16px;
     }
 
     .sum div{
-        width:50%;
+        width:80%;
     }
 
     .sum{
         width:80%;
         margin:auto;
-        justify-content: center;
+        padding-bottom:16px;
     }
     
     .sum p{
-        margin:0;
+        margin:16px 0;
+        width:fit-content;
     }
 
     .more{
