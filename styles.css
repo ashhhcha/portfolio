@@ -119,7 +119,12 @@ li a{
 }
 
 #logo{
-    width: 40px;
+    width: 50px;
+    height:50px;
+}
+
+#footerLogo{
+    width:40px;
     height:40px;
 }
 
@@ -751,7 +756,6 @@ img{
 
     .contactSect{
         display:flex;
-
         justify-content: unset;
     }
 
@@ -953,6 +957,27 @@ img{
         display: flex;
         height:100px;
         align-items: center;
+        justify-content: space-around;
+        width:80%;
+    }
+
+    header > a, header > div{
+        flex:2;
+    }
+
+    header > a{
+        display:flex;
+        justify-content: flex-start;
+    }
+
+    header > .contactSect{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    header > a:after, header > div:before{
+        content:'';
+        display:flex;
         justify-content: space-around;
     }
 
