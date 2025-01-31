@@ -750,6 +750,11 @@ img{
 
 @media only screen and (min-width: 600px) {
 
+    .more > div:first-of-type{
+        margin-bottom: 0;
+    }
+    
+
     footer{
         padding: 50px; 
     }
