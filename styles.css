@@ -754,6 +754,10 @@ img{
     margin-bottom:100px;
 }
 
+#streamPage{
+    margin: 0px 0 72px 0;
+}
+
 
 
 @media only screen and (min-width: 600px) {
