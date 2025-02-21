@@ -754,11 +754,6 @@ img{
     margin-bottom:100px;
 }
 
-#streamPage{
-    margin: 0px 0 72px 0;
-}
-
-
 
 @media only screen and (min-width: 600px) {
 
@@ -780,14 +775,16 @@ img{
         margin-bottom:32px;
     }
 
-    #mockupEx{
+    .mockupEx{
         display:flex;
         justify-content: space-evenly;
+        align-items: center;
         gap:32px;
+        margin-bottom:32px;
     }
-    #mockupEx img{
-        width:45%;
-        height: auto;
+
+    .mockupEx div{
+        width:50%;
     }
 
     .more > div:first-of-type{
