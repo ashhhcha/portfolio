@@ -84,6 +84,19 @@ header img{
 }
 
 
+/*======== video intro on index ========*/
+#theVideo{
+    width:80%;
+    margin:auto auto 72px auto;
+}
+
+#myVideo{
+    max-height:100%;
+    max-width:100%;
+    border-radius: 8px;
+}
+
+
 /*======== project cards ========*/
 .projectHook{
     font-weight:700;
@@ -184,17 +197,18 @@ header img{
     margin-bottom:72px;
 }
 
-.stories div{
+.stories > div{
     margin-bottom:32px;
+    width:50%;
 }
 
-.projectHalf .imgContainer > a{
+.projectHalf .imgContainer > a, .stories > div > div >a {
     width:100%;
     height:300px;
     overflow:hidden;
 }
 
-.projectHalf .imgContainer > a > img{
+.projectHalf .imgContainer > a > img, .stories > div > div > a > img{
     width:100%;
     height:100%;
     object-fit: cover;
