@@ -208,6 +208,10 @@ header img{
     overflow:hidden;
 }
 
+.stories > div > div >a{
+    display:inline-block;
+}
+
 .projectHalf .imgContainer > a > img, .stories > div > div > a > img{
     width:100%;
     height:100%;
