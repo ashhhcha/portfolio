@@ -1,180 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphics</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+  <!--My Styles-->
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- My Script -->
+  <script src="script.js" defer></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- favi icon -->
+  <link rel="icon" type="image/x-icon" href="images/favi.svg">
+
+  <title>Graphics</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo_outline.svg" alt="logo black" id="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
+  <header>
+
+    <a href="index.html"><img src="images/Ashley.svg"></a>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact">
+      <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+      <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+    </div>
+
+  </header>
+
+  <section class="graphicPg">
+    <h2>Graphic designs from the files.</h2>
+
+    <article class="graphicUCD">
+        <h3>University of California, Davis</h3>
+        <p>Digital, posters, print, branding, photography</p>
+        <p class="textWeak">Adobe Illustrator, Photoshop, After Effects, InDesign, Canva</p>
+        <img src="images/graphics/smMocksSpace.png">
+        <div>
+            <img src="images/graphics/streamPage.jpg">
+            <img src="images/graphics/filmingInProgress.jpg">
         </div>
-    </header>
-
-    <section class="graphic">
-        <h1><span style="color:#007EA8">Selected Graphics</span></h1>
-        <article class="graphicsover">
-            <div>
-                <h2>University of California, Davis</h2>
-                <p>Digital, Posters, Print, Branding, Photography</p>
-                <p class="highlighter2">Tools: Illustrator, Photoshop, After Effects, InDesign, Canva</p>
-            </div>
-            <div id="mockupExamples">            
-                <img src="images/graphics/smMocksSpace.png" alt="different graphics of social media">
-
-               
-                <img src="images/graphics/streamPage.jpg" id="streamPage" alt="webpage of the strategic communications social media">
-                
-                <img src="images/graphics/filmingInProgress.jpg" alt="blue filming in progress poster with water color elements">
-
-                <div class="mockupEx">
-                    <div>
-                        <img src="images/graphics/Mockup.jpg" alt="mockup poster">
-                    </div>
-                    <div>
-                        <img src="images/graphics/snackStation.png" alt="snack station poster">
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="photogrid">
-                <div class="column">
-                    <img src="images/gifs/umbrella.gif" alt="umbrella gif">
-                    <img src="images/gifs/cropHalloween.gif" alt="cow nyan cat wearing a pumpkin">
-                </div>
-                <div class="column">
-                    <img src="images/gifs/cropTractor.gif" alt="tractor gif">
-                    <img src="images/gifs/cheeto.gif" alt="cheeto gif">                    
-                </div>
-                <div class="column">
-                    <img src="images/gifs/pumpkin.gif" alt="fall quarter pumpkin gif">         
-                    <img src="images/gifs/stacked.gif" alt="uc davis logo changing color">
-                    <img src="images/gifs/TRCfull.gif" alt="transfer and reentry center gif">
-    
-                </div>
-                <div class="column">
-                    <div class="imgWrap">
-                        <img src="images/gifs/nightbus.gif" class="caption" alt="night bus gif for unitrans">
-                        <p class="imageDescrip">*illustrated by ASUCD, animated by me</p>
-                    </div>
-                    <div>
-                        <img src="images/gifs/lanterns.gif" alt="lunar new year gif">
-                    </div>
-                              
-                </div>
-            </div>
-
-        </article>
-
-        <article id="cmsiGraphic" class="organizer">
-            <div>
-                <h2>UC Davis Coastal and Marine Sciences Institute</h2>
-                <p>Digital, Branding</p>
-                <p class="highlighter2">Tools: Canva</p>
-            </div>
-            <div>            
-                <img src="images/graphics/stateFlyer.png" alt="state flyer">
-                
-            </div>
-            
-        </article>
-
-        <article class="graphicsover organizer" id="dd">
-            <div>
-                <h2>UC Davis Department of Design Senior Honors</h2>
-                <p>Digital, Print</p>
-                <p class="highlighter2">Tools: Adobe Illustrator</p>
-            </div>
-            <div>            
-                <img src="images/graphics/honorsMockup.png" alt="honors mockup" id="honorsmockup">
-            </div>
-            
-        </article>
-
-        <article class="graphicsover organizer" id="dd">
-            <div>
-                <h2>Beach Front Property Management</h2>
-                <p>Digital, Social Media</p>
-                <p class="highlighter2">Tools: Canva</p>
-            </div>
-            <div>            
-                <img src="images/graphics/bfpm.png" alt="bfpm mockup" >
-            </div>
-            
-        </article>
-
-        <!-- <article class="graphicsover organizer" id="dd">
-            <div>
-                <h2>For Fun</h2>
-                <p>Digital</p>
-                <p class="highlighter2">Tools: Linearity</p>
-            </div>
-            <div>            
-                <img src="images/graphics/headlineMock.png" alt="headline assignment for des115" id="des115mockup">
-            </div>
-            
-        </article> -->
-    
-    </section>
-    
-
-    <article class="otherProj">
-        <h2>take a look at my other projects!</h2>
-        <div class="imgFoot">
-            <div>
-                <a href="petpulse.html" class="imgFootContain"><img src="images/petpulse/cover.jpg" alt="pet pulse mockup"></a>
-                <h4><a href="petpulse.html">Pet Pulse</a></h4>                
-            </div>
-            <div>
-                <a href="photography.html" class="imgFootContain"><img src="images/photography/final.jpg"></a>
-                <h4><a href="photography.html">Photography</a></h4> 
-            </div>
+        <div>
+            <img src="images/graphics/Mockup.jpg">
+            <img src="images/graphics/snackStation.png">
         </div>
     </article>
 
-    <footer>
-        <nav class="navbar footerNav">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h2>Come chat with me!</h2> -->
-        <section>
-            <img src="images/logo_blue.svg" id="logo">
-            <h5>Ashley Chang</h5>
-        </section>
-        <!-- <p>come chat with me on:</p> -->
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
+    <article class="graphicDisplayDiv">
+        <div>
+            <h3>California State University, Fresno</h3>
+            <p>Digital, branding</p>
+            <p class="textWeak">Adobe Illustrator</p>
         </div>
-    </footer>
+        <div>
+            <img>
+        </div>
+    </article>
+
+    <article class="graphicDisplayDiv">
+        <div>
+            <h3>University of California, Davis Coastal and Marine Sciences</h3>
+            <p>Digital, branding</p>
+            <p class="textWeak">Canva</p>
+        </div>
+        <div>
+            <img src="images/graphics/stateFlyer.png">
+        </div>
+    </article>
+
+    <article class="graphicDisplayDiv">
+        <div>
+            <h3>University of California, Davis Department of Design Senior Honors Project</h3>
+            <p>Digital, print</p>
+            <p class="textWeak">Adobe Illustrator</p>
+        </div>
+        <div>
+            <img src="images/graphics/honorsMockup.png">
+        </div>
+    </article>
+
+  </section>
+
+
+  <section class="navEnd">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>
+
+    <h2>Contact me!</h2>
+      <div class="contactEnd">
+        <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+        <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+      </div>
+
+  </footer>
 
 </body>
 </html>

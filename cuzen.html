@@ -1,281 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuzen Matcha</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+  <!--My Styles-->
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- My Script -->
+  <script src="script.js" defer></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- favi icon -->
+  <link rel="icon" type="image/x-icon" href="images/favi.svg">
+
+  <title>Cuzen Matcha</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo_outline.svg" alt="logo black" id="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </header>
-    <div class="headerimg" id="headCuz">
-        <!-- <img src="images/carbonology.jpg" alt="carbonology"> -->
+  <header>
+
+    <a href="index.html"><img src="images/Ashley.svg"></a>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact">
+      <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+      <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
     </div>
-    <section class="internalpageCuz">
+
+  </header>
+
+  <section>
+    <div class="startImg">
+        <img src="images/berries.jpg" alt="#">
+    </div>
+  </section>
+
+  <section class="projectIntro">
+
+    <div class="projectMajor">
+        <h2>Cuzen Matcha</h2>
+        <p class="role">UX/UI Design Intern</p>
+        <p>With the risen interest in matcha, Cuzen Matcha is here to promote the use of freshly ground matcha. They also offer a variety of recipes that people can create in their own kitchens, and different forms people can consume matcha based on their preferences. However, the number of active users is low. I tackled the process of curating a better experience on the recipe page.</p>
+    </div>
+    <div class="projectMinor">
+        <div>
+            <h5>Role</h5>
+            <p>Web design, UX/UI design</p>
+        </div>
+        <div>
+            <h5>Duration</h5>
+            <p>6 months</p>
+        </div>
+        <div>
+            <h5>Tools</h5>
+            <p>Figma</p>
+        </div>        
+    </div>
+
+  </section>
+
+  <section class="projectBody">
+    <article>
+        <h3>Design goal.</h3>
+        <div class="emphasisSolution">
+            <p>Increase user engagement on Cuzen Matcha's recipe webpages and create an informed experience for matcha enjoyers to browse new recipes.</p>
+        </div>
+    </article>
+
+    <article class="initialDesign">
+        <h3>The original design.</h3>
+        <p>I interacted with Cuzen Matcha's initial recipe pages, noting potential elements which may arise as pain points for users. This initial observation also helped me get a feel for how users may navigate through the website.</p>
+        <div>
+            <img src="images/cuzen/initalDesign.png" class="cuzenImg">
+        </div>
+    </article>
+
+    <article>
+
+        <h3>User research</h3>
+        
+        <div>
+            <h4>Hey there, user!</h4>
+            <p>To begin the design process, I conducted a survey that asked about the users' thoughts on recipe pages in general, and changes they wished to see to Cuzen Matcha's recipe webpage.</p>
+            <div class="qualitativeResearch">
+                <p>At a glance</p>
+                <div>
+                    <div>
+                        <h4>75%</h4>
+                        <p>wanted to see changes to content</p>
+                    </div>
+                    <div>
+                        <h4>66%</h4>
+                        <p>agreed the webpage was unneccesarily complex</p>
+                    </div>
+                    <div>
+                        <h4>65%</h4>
+                        <p>agreed functions were not well integrated</p>
+                    </div>
+                </div>
             
-        <article class="top">  
-            <div class="summary">
-                <h1>Cuzen Matcha Recipe Redesign</h1>
-                <p>With the risen interest in matcha, Cuzen Matcha is here to promote the use of freshly ground matcha. They also offer a variety of recipes that people can create in their own kitchens, and different forms people can consume matcha based on their preferences. However, the number of active users is low. I tackled the process of curating a better experience on the recipe page.</p>
             </div>
-            <aside>
-                <div>
-                    <h4>Role</h4>
-                    <p>User research, visual design, prototyping</p>
-                </div>
-                <div>
-                    <h4>Time</h4>
-                    <p>1 month</p>
-                </div>                
-            </aside>
-        </article>
-        <article>
-            <div class="theproblem">
-                <h2>The Problem</h2>
-                <p>How might we Cuzen Matcha's recipe page to increase user engagement and create an informed experience for matcha enjoyers to browse new recipes.</p>
-            </div>
-        </article>
-        <article>
-            <h2>Initial Designs</h2>
-            <div id="initalDes">
-                <div>
-                    <img src="images/cuzen/cropped original design.png">
-                </div>
-                <div id="col2">
-                    <img src="images/cuzen/original recipe page.png">
-                    <p>I tested and interacted with Cuzen Matcha's current design of the recipe pages, noting potential elements which may arise as pain points for users. This initial observation also helped me get a feel for how users may navigate through the website.</p>
-                </div>
-            </div>
-        </article>
-        <article class="researchCuz">
-            <h2>User Research</h2>
-            <div>
-                <h3>Qualitative Research</h3>
-                <p>To begin the redesign process, I wanted to get further insight into the user's perspective on the recipe page. I conducted a survey that asked about their thoughts on recipe pages in general, and changes they wished to see to Cuzen Matcha's recipe webpage.</p>
-            </div>
-            <div class="stats statsCuz">
-                <div>
-                    <h3>75%</h3>
-                    <p>wanted to see changes to content</p>
-                </div>
-                <div>
-                    <h3>66%</h3>
-                    <p>agreed the webpage was unneccesarily complex</p>
-                </div>
-                <div>
-                    <h3>55%</h3>
-                    <p>agreed functions were not well integrated</p>
-                </div>
-            </div>
-        </article>
-        <article>
-            <h3>Qualitative Research</h3>
+            <h4>The wants, the needs.</h4>
             <p>I also received and compiled further insights to particular features users wanted to see in recipe pages and on the Cuzen Matcha page itself.</p>
-            <img src="images/cuzen/sticky note.png" class="cuzImgDec">  
-        </article>
-        <article>
-            <h3>User Personas</h3>
-            <p>Based on the survey, I narrowed down and created a cohesive image of Cuzen Matcha's target audience and their wants, needs, and frustrations.</p>
-            <div class="cuzImg">
-                <img src="images/cuzen/ethan persona.png">
-                <img src="images/cuzen/lina persona.png">
-            </div>
-            
-        </article>
-        </article>
-        <article class="solution cuzSol">
-            <p>I decided to redesign and include five features that users wanted to see changed, based on their feedback regarding content and layout.</p>
-            <h2>The Solution</h2>
-            <table id="cuzTable">
-                <tr>
-                    <th>Layout</th>
-                    <td>Revise layout of recipes to include larger photos emphasizing the food</td>
-                </tr>
-                <tr>
-                    <th>Search and Filter</th>
-                    <td>Enable users to easily search and locate the desired recipes</td>
-                </tr>
-                <tr>
-                    <th>Context to Terms</th>                  
-                    <td>Assist understanding in the terms "blend" and "level" used by Cuzen Match</td>
-                </tr>        
-                <tr>
-                    <th>Dietary Information</th>
-                    <td>Allow users to identify recipes that meet their specific dietary requirements</td>
-                </tr>
-                </tr>        
-                    <th>Measurements</th>
-                    <td>Allow users to switch between US customary or metric measurements</td>
-                </tr>
-              </table> 
-            
-        </article>
-        <article>
-            <h2>Ideation</h2>
-            <h3>Low Fidelity</h3>
-            <p>I began brainstorming the implementation of the suggested features individuals wanted to see. While keeping some previous features, I quickly sketched out my vision for the redesign. </p>
-            <img src="images/cuzen/low fidelity.png" class="cuzImgDec" alt="cuzen low fidelity">
+            <img src="images/cuzen/affinityMap.png" class="cuzenImg">
+        </div>
 
-            <h3>Wireframes</h3>
-            <p>To get a more structured detailed idea and visualization of the recipe page, I refined the design in Figma.</p>
-            <div class="cuzImg">
-                <img src="images/cuzen/LF main.png">
-                <img src="images/cuzen/LF ip.png">
-            </div>  
-    </section>
+    </article>
 
-        <article class="hifi">
-            <div class="highfidCuz">
-                <h3>High Fidelity</h3>
-                <div class="align">
-
-                    <div class="funct">
-                        <h3>Meal, Diet, Level, or Mood</h3>
-                        <p>To help users navigate the wide variety of recipes,  categories (by meal, diet, matcha level, mood) are provided to help the journey.</p>
-                    </div>
-                    <div class="gif">
-                        <img src="images/cuzen/recipedropdown.gif">
-                    </div>                    
-                </div>
-
-                <div class="align">
-                    <div class="funct">
-                        <h3>Larger Photos</h3>
-                        <p>With a grid layout, larger photos are shown to emphasize the visual appeal of the recipes. Categories are also simplified to prevent overcrowding.</p>
-                    </div>
-                    <div class="gif">
-                        <img src="images/cuzen/mainpagescroll.gif">
-                    </div>
-                </div>
-
-                <div class="align">
-                    <div class="funct">
-                        <h3>The Recipe</h3>
-                        <p>To simplify and improve user experience, the recipe page is sectioned by ingredient, preparation, tips, and storage. Similar recipes are also shown if users want to explore more tastes.</p>
-                    </div>
-                    <div class="gif">
-                        <img src="images/cuzen/recipescroll.gif">
-                    </div>                    
-                </div>
-
-                <div class="align">
-                    <div class="gif">
-                        <img src="images/cuzen/metricswitch.gif">
-                    </div>                    
-                    <div class="funct">
-                        <h3>Choice of Measurement</h3>
-                        <p>Every kitchen is different. Users can switch between US Customary and Metric to chose the unit of measurement they are comfortable with. </p>
-                    </div>
-
-                </div>   
-                
-                <div class="align">
-                    <div class="gif">
-                        <img src="images/cuzen/callout.gif">
-                    </div>
-                    <div class="funct">
-                        <h3>Hover to Learn More</h3>
-                        <p>To prevent visual overwhelm, learn more about Cuzen Matcha terms by hovering over the highlighted text. Click the link to be redirected to a tutorial.</p>
-                    </div>
-                </div>
-
-                <div class="align">
-                    <div class="gif">
-                        <img src="images/cuzen/filter.gif">
-                    </div>
-                    <div class="funct">
-                        <h3>Filter Out</h3>
-                        <p>To find specific recipes that cater to the user's needs, a filter feature is used to easily narrow down and filter recipes. </p>
-                    </div>
-                </div>
-            </div>
-        </article>
-    
-        <article class="reflection">
-            <div class="content">
-                <h2>Reflection</h2>
-                <div class="paragraph">
-                    <div>
-                        <h4>Time management</h4>
-                        <p>This project was my first solo UX/UI design project. With full creative control over the redesign, I quickly learned the importance of time management and structured planning. With only myself to guide the project, I became more responsible for timelines and maintaining a diligent to-do list with self-imposed deadlines. This experience fundamentally improved my organizational skills and my ability to work at an effective pace with design projects.</p>
-                    </div>
-                    
-                    <div>
-                        <h4>Learning from others</h4>
-                        <p>While the survey feedback helped identify specific features to include in the redesign, I also received requests to experiment with the format of the webpages. Initially, envisioning the UI design was challenging as I could only envision generic recipe website designs. However, during the low-fidelity and wireframe stages, I shifted my approach. I actively studied various websites, noting what worked and what didn't in their designs. This studying helped me improve my initial sketch and vision for the webpages. Learning from other designers expanded my design perspectives and inspired diverse UI structural ideas.</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </article>
-
-    <!-- <article class="bottomnavbar">
-        <nav>
-            <ul>
-                <li><a href="venmo.html">Next</a></li>
-                <li><a href="venmo.html"><img src="images/rightarrow.svg" alt="right arrow"></a></li>
-            </ul>
-        </nav>
-    </article> -->
-
-    <article class="otherProj">
-        <h2>take a look at my other projects!</h2>
-        <div class="imgFoot">
+    <article class="mappingSolutions">
+        <h3>Mapping the solutions</h3>
+        <p>After consulting with the CEO and Design Director, I focused on 4 main features, alongside layout:</p>
+        <div class="organize">
             <div>
-                <a href="carbonology.html" class="imgFootContain"><img src="images/carbonology/carbonologyMockup.png"></a>
-                <h4><a href="carbonology.html">Carbonology</a></h4> 
-            </div>            
+                <h5>Search and filter</h5>
+                <p>Enable users to easily search and locate the desired recipes.</p>
+            </div>
             <div>
-                <a href="petpulse.html" class="imgFootContain"><img src="images/petpulse/cover.jpg"></a>
-                <h4><a href="petpulse.html">Pet Pulse</a></h4>                
+                <h5>Context to terms</h5>
+                <p>Assist understanding in the terms "blend" and "level" used by Cuzen Match.</p>
+            </div>
+        </div>
+        <div class="organize">
+            <div>
+                <h5>Dietary information</h5>
+                <p>Allow users to identify recipes that meet their specific dietary requirements.</p>
+            </div>
+            <div>
+                <h5>Measurement choice</h5>
+                <p>Allow users to switch between US customary or metric measurements.</p>
             </div>
         </div>
     </article>
 
-    <footer>
-        <nav class="navbar footerNav">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h2>Come chat with me!</h2> -->
-        <section>
-            <img src="images/logo_blue.svg" id="logo">
-            <h5>Ashley Chang</h5>
-        </section>
-        <!-- <p>come chat with me on:</p> -->
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
+    <article class="lowFid">
+        <h3>Explorations.</h3>
+        <p>To simplify navigation and visual design, i _____. In the final design, I had the information appear when the user hovers over the information to reduce visual overwhelm.</p>
+        <img src="images/cuzen/lowFidelity.png" class="cuzenImg">
+        
+    </article>
+
+
+    <article class="highFid">
+        <h3>The design.</h3>
+
+        <div class="highFidDescrip">
+            <div class="navigationDesign">
+                <h4>Navigation</h4>
+                <!-- <div>
+                    <p>Start your search with finding recipes based on your needs.</p>
+                    <p class="textWeak">To help users navigate the wide variety of recipes, I included categories (by meal, diet, matcha level, mood) to give them suggestions on where to start looking.</p>
+                </div> 
+            </div>
+            <img src="images/cuzen/gifs/recipedropdown.gif" class="highFidGifs">
+            <div>
+                <h5>Filtering</h5> -->
+                <div>
+                    <p>Know exactly what you want? Filter your search to help narrow down options.</p>
+                    <p class="textWeak">I added a filter feature to allow the user to find specific recipes they're looking for.</p>
+                </div> 
+            </div>
+            <img src="images/cuzen/gifs/filter.gif" class="highFidGifs">
         </div>
-    </footer>
+
+        <div class="highFidDescrip">
+            <div>
+                <h4>Inventory Page Format</h4>
+                <div>
+                    <p>Browse the diverse selection of recipes for your next creation.</p>
+                    <p class="textWeak">With a grid layout, larger photos are shown to emphasize the visual appeal of the recipes. Categories are also simplified to prevent overcrowding.</p>
+                </div>
+            </div>
+            <img src="images/cuzen/gifs/mainpagescroll.gif" class="highFidGifs">
+        </div>
+
+        <div class="highFidDescrip">
+            <div>
+                <h4>Recipe Page Format</h4>
+                <div>
+                    <p>Follow along the recipe, and learn tips and proper leftover storage.</p>
+                    <p class="textWeak">To simplify the design, the recipe page is sectioned by ingredient, preparation, tips, and storage. Similar recipes are also shown if users want to explore more tastes.</p>
+                </div>
+            </div>
+            <img src="images/cuzen/gifs/recipescroll.gif" class="highFidGifs">
+        </div>
+
+        <div class="highFidDescrip">
+            <div>
+                <h4>US Customary or Metric</h4>
+                <div>
+                    <p>Every kitchen is different. Switch between US Customary and Metric to chose the unit of measurement you're comfortable with.</p>
+                    <p class="textWeak">Giving the user options to switch between the two systems of measurements allows Cuzen Matcha to reach a more diverse audience.</p>
+                </div>
+            </div>
+            <img src="images/cuzen/gifs/metricswitch.gif" class="highFidGifs">
+        </div>
+
+        <div class="highFidDescrip">
+            <div>
+                <h4>Hover Pop-Up</h4>
+                <div>
+                    <p>Hover over highlighted text to learn more about common terms used by Cuzen Matcha.</p>
+                    <p class="textWeak">To minimize information overload in the design, information appears through hovering over the highlighted text. Users can click the link to be redirected to a tutorial.</p>
+                </div>
+            </div>
+            <img src="images/cuzen/gifs/callout.gif" class="highFidGifs">
+        </div>
+        
+    </article>
+
+
+
+    <article class="reflections">
+        <h3>Takeaways.</h3>
+        <div>
+            <div>
+                <h4>Project management</h4>
+                <p>With full creative control over the redesign, I quickly learned the importance of time management and structured planning. With only myself to guide the project, I became more responsible for timelines and maintaining a diligent to-do list with self-imposed deadlines. This experience fundamentally improved my organizational skills and my ability to work at an effective pace with design projects.</p>
+            </div>
+            <div>
+                <h4>Learning from others</h4>
+                <p>I actively studied various websites, noting what worked and what didn't in their designs. This studying helped me improve my initial sketch and vision for the webpages. Learning from other designers expanded my design perspectives and inspired diverse UI structural ideas.</p>
+            </div>
+            
+        </div>
+    </article>
+
+  </section>
+
+  <section class="otherProjects">
+    <h2>My other stories.</h2>
+    <div class="stories">
+        <div>
+            <h4>project 1</h4>
+            <div class="imgContainer">
+                <a href="#"><img src="images/berries.jpg" class="projectGraphic"></a>
+            </div>
+        </div>
+        <div>
+            <h4>project 2</h4>
+            <div class="imgContainer">
+                <a href="#"><img src="images/berries.jpg" class="projectGraphic"></a>
+            </div>
+        </div>
+    </div>
     
+  </section>
+
+  <section class="navEnd">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>
+
+    <h2>Contact me!</h2>
+      <div class="contactEnd">
+        <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+        <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+      </div>
+
+  </footer>
+
 </body>
 </html>

@@ -1,180 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Chang</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <!--My Styles-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--My Styles-->
+  <link href="styles.css" rel="stylesheet">
 
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- My Script -->
+  <script src="script.js" defer></script>
 
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+  <!-- favi icon -->
+  <link rel="icon" type="image/x-icon" href="images/favi.svg">
 
-    <!-- fontawesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Ashley Chang</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo_outline.svg" alt="logo black" id="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </header>
-    <section id="theVideo">
-        <video id="myVideo" muted autoplay loop playsinline>
-            <source src="media/main_1.mp4" type="video/mp4">
-            <p>browser doesn't support HTML5 video. <a href="media/main_1.mp4">link to video</a></p>
-        </video>
-    </section>
+  <header>
 
-    <section class="mainpage">
-        <h1><span style="color:#007EA8">Selected Projects</span></h1>
-        
-        <article>
-            <div class="sectdiv">
-                <h2>Managing pet healthcare</h2> 
-                <h2 class="highlighter2">&#183; </h2>
-                <h2 class="highlighter2">Davis Design Interactive</h2>
-            </div>
-            <div class="sum">
-                <div>
-                    <p>A Cohort project helping pet owners stay informed about their pet(s) wellbeing by easily managing veterinarian documents and scheduling appointments.</p>
-                </div>
-                
-                <p class="button"><a href="petpulse.html">view project<img src="images/arrow.svg" alt="arrow icon" class="arrow"></a></p>
+    <a href="index.html"><img src="images/Ashley.svg"></a>
 
-            </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
 
-            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+    <div class="contact">
+      <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+      <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+    </div>
 
-            <div>
-                <a href="petpulse.html" class="imgContain"><img src="images/petpulse/cover.jpg" alt="pet pulse mockup"></a>
-            </div>
-        </article>
+  </header>
 
-        <article>
-            <div class="sectdiv">
-                <h2>Bridging generation gaps</h2>
-                <h2 class="highlighter2">&#183; </h2>
-                <h2 class="highlighter2">UC Davis</h2>
-            </div>
-            <div class="sum">
-                <div>
-                    <p>Senior Honors Design web prototype enhancing user's familial relationships by 75%, and encouraging conversations between first- and second-generation Taiwanese Americans through series of questions about values, beliefs, and behaviors.</p>
-                    <p class="button"><a href="thesis.html">view project<img src="images/arrow.svg" alt="arrow icon" class="arrow"></a></p>
-                </div>
-            </div>
-            <div>
-                <a href="thesis.html" class="imgContain"><img src="images/thesis/mockup.png" alt="thesis mockup"></a>
-            </div>
-        </article>
-        
-        <article>
-        
-            <div class="sectdiv">
-                <h2>Reduce, reuse, recycle...and rewards?!</h2>
-                <h2 class="highlighter2">&#183; </h2>
-                <h2 class="highlighter2">UC Irvine's Design-A-Thon</h2>
-            </div>
-            <div class="sum">
-                <div>
-                    <p>Design-A-Thon mobile prototype improving sustainability by educating users on the carbon footprints of products, and incentivizing them to recycle.</p>
-                    <p class="button"><a href="carbonology.html">view project<img src="images/arrow.svg" alt="arrow icon" class="arrow"></a></p>
+  <section class="projectCard">
 
-                </div>
-            </div>
+    <div class="projectTitle">
+      <ul>
+        <li class="projectHook">Reducing evaluation time</li>
+        <li class="companyName"> &#183; </li>
+        <li class="companyName">Fresno State</li>
+      </ul>
+    </div>
 
-            <div>
-                <a href="carbonology.html" class="imgContain"><img src="images/carbonology/carbonologyMockup.png" alt="carbonology mockup"></a>
-            </div>
-        </article>
+    <p>A current, ongoing desktop dashboard project for evaluators to analyze transcripts in minutes with AI.</p>
 
-        <article>
-        
-            <div class="sectdiv">
-                <h2>Increasing user satisfaction by 50%</h2>
-                <h2 class="highlighter2">&#183; </h2>
-                <h2 class="highlighter2">Cuzen Matcha</h2>
-            </div>
-            <div class="sum">
-                <div>
-                    <p>Elevating Cuzen Matcha's navigation and visual design to encourage users to explore various ways of matcha.</p>
-                    <p class="button"><a href="cuzen.html"> view project<img src="images/arrow.svg" alt="arrow icon" class="arrow"></a></p>
+    <p><i>Coming soon...</i></p>
+    <!-- <a href="eduvisor.html" class="viewProjectButton"><p>View the full story</p>
+    <img src="images/arrow.svg" alt="arrow icon" class="arrow"></a> -->
 
-                </div>
-            </div>
+    <div class="imgContainer">
+      <!-- <a href="eduvisor.html"> -->
+        <img src="images/projectCovers/eduvisor.png" class="projectGraphic">
+      <!-- </a> -->
+    </div>
 
-            <div>
-                <a href="cuzen.html" class="imgContain">
-                <img src="images/cuzen.png" alt="cuzen mockup"></a>
-            </div>
-        </article>
+  </section>
 
-    </section>
-        <article class="more">
-            <div>
-                <div class="moreButton">
-                    <h2>Selected Photography</h2>
-                    <p class="button"><a href="photography.html">view<img src="images/arrow.svg" alt="arrow icon" class="arrow"></a></p>
-                </div>
-                <a href="photography.html" class="blocks imgContain2">
-                    <img src="images/photography/final.jpg" alt="final project for class">
-                </a>
-                
-            </div>
-            <div>
-                <div class="moreButton" id="graphics">
-                    <h2>Selected Graphics</h2>
-                    <p class="button"><a href="graphics.html">view<img src="images/arrow.svg" alt="arrow icon" class="arrow"></a></p>
-                </div>
-                <a href="graphics.html" class="blocks imgContain2">
-                    <img src="images/gifs/cropTractor.gif" alt="graphic collection cover">
-                </a>
-                
-            </div>
-        </article>
+  <section class="projectCard">
 
-    <footer>
-        <nav class="navbar footerNav">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h2>Come chat with me!</h2> -->
-        <section>
-            <img src="images/logo_blue.svg" id="logo">
-            <h5>Ashley Chang</h5>
-        </section>
-        <!-- <p>come chat with me on:</p> -->
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </footer>
+    <div class="projectTitle">
+      <ul>
+        <li class="projectHook">Managing pet healthcare</li>
+        <li class="companyName"> &#183; </li>
+        <li class="companyName">Davis Design Interactive</li>
+      </ul>
+    </div>
+
+    <p>An award-winning cohort project helping pet owners stay informed about their pet(s) wellbeing by easily managing veterinarian documents  and scheduling appointments.</p>
+
+    <a href="petpulse.html" class="viewProjectButton"><p>View the full story</p>
+    <img src="images/arrow.svg" alt="arrow icon" class="arrow"></a>
+
+    <div class="imgContainer">
+      <a href="petpulse.html"><img src="images/berries.jpg" class="projectGraphic"></a>
+    </div>
+
+  </section>
+
+  <section class="projectCard">
+
+    <div class="projectTitle">
+      <ul>
+        <li class="projectHook">Reduce, reuse, recycle ... and rewards?</li>
+        <li class="companyName"> &#183; </li>
+        <li class="companyName">UC Irvine's Design-a-thon</li>
+      </ul>
+    </div>
+
+    <p>A 2nd place Design-a-thon mobile prototype improving sustainability by educating  users on the carbon footprints of products, and incentivizing them to  recycle.</p>
+
+    <a href="carbonology.html" class="viewProjectButton"><p>View the full story</p>
+    <img src="images/arrow.svg" alt="arrow icon" class="arrow"></a>
+
+    <div class="imgContainer">
+      <a href="carbonology.html"><img src="images/berries.jpg" class="projectGraphic"></a>
+    </div>
+
+  </section>
+
+  <section class="projectCard">
+
+    <div class="projectTitle">
+      <ul>
+        <li class="projectHook">Increasing user satisfaction by 50%</li>
+        <li class="companyName"> &#183; </li>
+        <li class="companyName">Cuzen Matcha</li>
+      </ul>
+    </div>
+
+    <p>Elevating Cuzen Matcha's navigation and visual design to encourage users to explore various ways to enjoy matcha.</p>
+
+    <a href="cuzen.html" class="viewProjectButton"><p>View the full story</p>
+    <img src="images/arrow.svg" alt="arrow icon" class="arrow"></a>
+
+    <div class="imgContainer">
+      <a href="cuzen.html"><img src="images/berries.jpg" class="projectGraphic"></a>
+    </div>
+
+  </section>
+
+  <section class="projectCard projectHalf">
+
+    <div class="halfSect">
+      <div class="projectTitle">
+        <ul>
+          <li class="projectHook">Photography</li>
+        </ul>
+      </div>
+
+      <p>A curated gallery of images from my camera.</p>
+
+      <a href="photography.html" class="viewProjectButton"><p>View the photographs</p>
+      <img src="images/arrow.svg" alt="arrow icon" class="arrow"></a>
+
+      <div class="imgContainer">
+        <a href="photography.html"><img src="images/photography/mirrorboatcrop.png" class="projectGraphic"></a>
+      </div>
+    </div>
+
+    <div class="halfSect">
+      <div class="projectTitle">
+        <ul>
+          <li class="projectHook">Graphics</li>
+        </ul>
+      </div>
+
+      <p>Visual design works from over the years.</p>
+
+      <a href="graphics.html" class="viewProjectButton"><p>Explore the graphics</p>
+      <img src="images/arrow.svg" alt="arrow icon" class="arrow"></a>
+
+      <div class="imgContainer">
+        <a href="graphics.html"><img src="images/graphics/cropTractor.gif" class="projectGraphic"></a>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="navEnd">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>
+
+    <h2>Contact me!</h2>
+      <div class="contactEnd">
+        <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+        <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+      </div>
+
+  </footer>
+
 </body>
 </html>

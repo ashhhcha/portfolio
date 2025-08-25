@@ -1,252 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbonology</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+  <!--My Styles-->
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- My Script -->
+  <script src="script.js" defer></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- favi icon -->
+  <link rel="icon" type="image/x-icon" href="images/favi.svg">
+
+  <title>Carbonology</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo_outline.svg" alt="logo black" id="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </header>
-    <div class="headerimg" id="headCarb">
-        <!-- <img src="images/carbonology.jpg" alt="carbonology"> -->
+  <header>
+
+    <a href="index.html"><img src="images/Ashley.svg"></a>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact">
+      <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+      <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
     </div>
-    <section class="internalpage">
-            
-        <article class="top">  
-            <div class="summary">
-                <h1>Carbonology</h1>
-                <p>Being eco-friendly isn’t that simple for everyone and we know that. Carbonology is an app that provides convenient access to important sustainability information of common household products and aims to help consumers lead a more sustainable life.</p>
-                <p><b>Award</b>: Second Place at UCI's Impact 2022 Design-a-thon</p>
-            </div>
-            <aside>
-                <div>
-                    <h4>Role</h4>
-                    <p>Human-centered design, user research, prototyping</p>
-                </div>
-                <div>
-                    <h4>Time</h4>
-                    <p>3 days</p>
-                </div>
-                <div>
-                    <h4>Team</h4>
-                    <p>Angel Yim, An Nguyen, Ryan Yang</p>
-                </div>
-                
-            </aside>
-        </article>
-        <article>
-            <div class="theproblem">
-                <h2>The Problem</h2>
-                <p>With the lack of education, convenient access, and financial incentive to recycle, taking a step towards a sustainable lifestyle may seem daunting to people. Identifying recyclable items can be confusing, and finding nearby recycling facilities can pose an inconvenience. There is also no encouragement or motivation to alter their behavior to begin recycling.</p>
-            </div>
 
-        </article>
-        <article class="research">
-            <h2>User Research</h2>
-            <blockquote>"...94% of Americans support recycling, and 74% say it should be a top priority. But only about 35% of people actually recycle." - American Broadcasting Company (ABC)
-            </blockquote>
-            <div>
-                <h3>Surveys</h3>
-                <p>To gather more information, I started off with surveying people on their habits of recycling and conscious purchases. I asked them questions about:</p>
-                    <ol>
-                        <li>The frequency of which they recycle</li>
-                        <li>Their perspective on sustainability</li>
-                        <li>Their consideration of carbon footprint when purchasing items</li>
-                        <li>Their thoughts on why Americans do not recycle</li>
-                    </ol>
-            </div>
+  </header>
 
-            <div>
-                <h3>Affinity Mapping</h3>
-                <p>I complied participants' survey responses and categorized two common problems I noted individuals faced: education and financial issues. I used an affinity map to organize their thoughts.</p>
-                <img src="images/carbonology/affinity.png">                
-            </div>
+  <section>
+    <div class="startImg">
+        <img src="images/berries.jpg" alt="#">
+    </div>
+  </section>
 
-            <div>
-                <h3>Secondary Research</h3>
-                <p>To better understand the attitudes of people who recycle, I explored studies and articles on their perceptions towards recycling and learned that financial incentives can affect behavior towards recycling and there is confusion towards the process of recycling.</p>
-                <blockquote>"Financial incentives are more effective for among consumers with lower levels of environmental knowledge, while nonfinancial incentives are more effective among consumers with higher levels" (Li, 2021)</blockquote>
-                <blockquote>“While done with good intentions, many Americans are practicing aspirational recycling – tossing things into recycling bins that they think should be recycled, rather than what can be recycled.” - Dr. Paul Gilman, chief sustainability officer at Covanta</blockquote>
-                <p>After summarizing the data and research, we focused on addressing the three main factors that contributed to the lack of recycling:</p>
-                    <ol>
-                        <li>No incentive to recycle</li>
-                        <li>Lack of education</li>
-                        <li>Lack of convenient access</li>
-                    </ol>
-            </div>
-        </article>
-        <article class="solution CarbSol">
-            <h2>The Solution?</h2>
-            <p>How might we design an app that encourages the users to work sustainably, and allows them to easily check the product's sustainable information and resources.</p>
-            <img src="images/carbonology/chart.png">
-        </article>
-        <article>
-            <h2>Ideation</h2>
-            <h3>Low Fidelity</h3>
-            <p>After much discussion about what features we wanted to include, I drafted a quick sketch that encompassed everyone's ideas. I wanted to ensure this app included effective features that addressed the factors of incentives, education, and convenient access to lack of recycling.</p>
-            <div class="thoughts">
-                <img src="images/carbonology/carbonlow.jpg" alt="carbonology low fidelity">
-            </div>
-        </article>
-        <article>
-            <h3>Visual Design</h3>
-            <p>Carbonology primarily uses green due to the color's frequent association with the environment. The app also includes various tints and shades of green and purple to create a calming color palette with cool tone colors. Open Sans was chosen for its easy readability.</p>
-            <div class="visualDes">
-                <div>
-                    <img src="images/carbonology/visualDesignEx.png">
+  <section class="projectIntro">
 
-                </div>
-                <div>
-                    <img src="images/carbonology/color1.png">
-                    <div>
-                        <img src="images/carbonology/typetreat.png">
-                    </div>
-                </div>
-            </div>
+    <div class="projectMajor">
+        <h2>Carbonology</h2>
+        <p>Over the course of 72 hours, my team and I designed a mobile prototype to help consumers lead a more sustainable life through education and incentives.</p>
+        <p><b>Award: </b>2nd Place at UC Irvine's Impact 2022 Design-a-thon</p>
+    </div>
+    <div class="projectMinor">
+        <div>
+            <h5>Role</h5>
+            <p>User research, wireframing, prototyping</p>
+        </div>
+        <div>
+            <h5>Duration</h5>
+            <p>3 days</p>
+        </div>
+        <div>
+            <h5>Tools</h5>
+            <p>Figma</p>
+        </div>
+        <div>
+            <h5>Team</h5>
+            <p>Angel Yim, An Nguyen, Ryan Yang</p>
+        </div>
+        
+    </div>
 
+  </section>
 
-            <div class="highfid">
-                <h3>High Fidelity</h3>
-                <div class="align">
-                    <div>
-                        <img src="images/carbonology/stayupdated.gif">
-                    </div>
-                    <div>
-                        <h3>Stay Updated</h3>
-                        <p>Stay updated on community events to participate in and news of current events.</p>
-                    </div>
-                </div>
+  <section class="projectBody">
+    <article>
+        <h3>Project Overview.</h3>
+        <p>Being eco-friendly isn't simple for everyone, and we know that. With the lack of education, convenient access, and financial  incentive to recycle, taking a step towards a sustainable lifestyle may  seem daunting to people. Identifying recyclable items can be confusing,  and finding nearby recycling facilities can pose an inconvenience. There is also no encouragement or motivation to alter their behavior to begin recycling.</p>
+        <p>The solution? Carbonology is an app that provides convenient access to important  sustainability information of common household products and aims to help consumers lead a more sustainable life.</p>
+    </article>
 
-                <div class="align">
-                    <div>
-                        <h3>Learn more</h3>
-                        <p>Discover a product's recyclability, biodegration, carbon footprint, and alternative choices.</p>
-                    </div>
-                    <div>
-                        <img src="images/carbonology/milk.gif">
-                    </div>
-                </div>
+    <article class="userResearch">
 
-                <div class="align">
-                    <div>
-                        <img src="images/carbonology/scanning.gif">
-                    </div>
-                    <div>
-                        <h3>Scan for more</h3>
-                        <p>For convenience, scanning the product's barcode to learn about its level of sustainability and alternative choices.</p>
-                    </div>
-                </div>
-
-                <div class="align">
-                    <div>
-                        <h3>Rewards</h3>
-                        <p>Earn points through recycling and redeem coupons to use for items on your next grocery shopping trip.</p>
-                    </div>
-                    <div>
-                        <img src="images/carbonology/rewards.gif">
-                    </div>
-                </div>   
-                
-                <div class="align">
-                    <div>
-                        <img src="images/carbonology/recyclingCenter.gif">
-                    </div>
-                    <div>
-                        <h3>Nearby</h3>
-                        <p>Explore local recycling, compost, and donation centers close by.</p>
-                    </div>
-                </div>
-
-            </div>
-        </article>
-    </section>
-    
-        <article class="reflection">
-            <div class="content">
-                <h2>Reflection</h2>
-                <div class="paragraph">
-                    <div>
-                        <h4>Importance of research</h4>
-                        <p>In the user research portion of the project, I learned the importance of utilizing secondary research in your design. While interviews can help give you a good idea about the components of your design, there will be details that may be left out. When ideating solutions regarding science and sustainability, secondary research can provide scientific information about the user, and cover the gaps from primary research.</p>
-                    </div>
-                    
-                    <div>
-                        <h4>Collaboration</h4>
-                        <p>Because the given prompt was broad, the ideation stage of this project was challenging to navigate through. Each teammate had a unique pitch for the app. As a result, this method of collaboration was able to consider and address the issues that users faced. Without the inclusion of all ideas, the app would not have developed as thoroughly to expand on the problems regarding recycling. This collaboration demonstrated to me the importance of taking into account your teammates' thoughts and perspectives to further the design and achieve project goals.</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </article>
-
-    <!-- <article class="bottomnavbar">
-        <nav>
+        <h3>Jumping into user research.</h3>
+        
+        <div class="userResearchSurvey">
+            <h4>Through surveys and interviews</h4>
+            <p>My team and I surveyed people on their habits of recycling and conscious purchases. I asked them questions about:</p>
             <ul>
-                <li><a href="venmo.html">Next</a></li>
-                <li><a href="venmo.html"><img src="images/rightarrow.svg" alt="right arrow"></a></li>
+                <li>the frequency they recycle</li>
+                <li>their perspective on sustainability</li>
+                <li>their consideration of carbon footprint when purchasing items</li>
+                <li>their thoughts on why Americans don't recycle</li>
             </ul>
-        </nav>
-    </article> -->
+            <p>After compiling our findings into an affinity map, our survey revealed two problems individuals encounter: <b>educational</b> and <b>financial</b>.</p>
+        </div>
+            
+        
+        <div class="quotes">
+            <h4>Through articles and studies</h4>
+            <p>To gather more insights about the challenge, I analyzed articles and studies about the American perception on recycling, and learned <b>financial incentives affect behavior towards recycling</b>, and <b>people face confusion when recycling items.</b></p>
+        
+            <blockquote>"Financial incentives are more effective for among consumers with lower levels of environmental knowledge, while nonfinancial  incentives are more effective among consumers with higher levels"
+                <span>&#8212; Li, 2021</span>
+            </blockquote>
+        
+            <blockquote>“While done with good intentions, many Americans are  practicing aspirational recycling - tossing things into recycling bins  that they think should be recycled, rather than what can be recycled.”
+                <span>&#8212; Dr. Paul Gilman, chief sustainability officer at Covanta</span>
+            </blockquote>
+            
+        </div>
 
-    <article class="otherProj">
-        <h2>take a look at my other projects!</h2>
-        <div class="imgFoot">
+    </article>
+
+    <article>
+
+        <h3>Insights of research.</h3>
+        <div class="keyTakes">
             <div>
-                <a href="petpulse.html" class="imgFootContain"><img src="images/petpulse/cover.jpg"></a>
-                <h4><a href="petpulse.html">Pet Pulse</a></h4>                
+                <h5>No incentive to recycle</h5>
+                <p>There is currently no motivation for Americans to go through the effort to recycle.</p>
             </div>
             <div>
-                <a href="thesis.html" class="imgFootContain"><img src="images/thesis/mockup.png"></a>
-                <h4><a href="thesis.html">Mind the Gap</a></h4> 
+                <h5>Lack of education</h5>
+                <p>There are too many factors to consider when recycling for what items can or cannot be recycled.</p>
             </div>
+            <div>
+                <h5>Inadequate access</h5>
+                <p>Recycling is a hassle because there are rarely nearby recycling bins in public or recycling centers.</p>
+            </div>
+        </div>
+        
+    </article>
+    
+    <article>
+        <h3>Ideation.</h3>
+        <h4>Sketches</h4>
+        <p>I drafted quick sketches on features that addressed factors of incentives, education, and access to recycling. Given the limited time, my team and I moved quickly from here.</p>
+        <img src="images/carbonology/sketches.png" class="carbonImg">
+    </article>
+
+        <article>
+
+        <h3>Solutions.</h3>
+        <div class="solutionFeatures">
+            <div>
+                <h5>Rewards page</h5>
+                <p>Gain reward points for recycling to redeem for coupons through personalized QR code</p>
+            </div>
+            <div>
+                <h5>Home page</h5>
+                <p>Access news related to sustainability, discover events to join, and become involved in their communities.</p>
+            </div>
+            <div>
+                <h5>Scan page</h5>
+                <p>Scan product's barcode to learn the product's recyclability, carbon footprint, and proper disposal process.</p>
+            </div>
+        </div>
+        <div class="solutionFeatures">
+            <div>
+                <h5>Search page</h5>
+                <p>Find and filter results to find sustainablity information on products.</p>
+            </div>
+            <div>
+                <h5>Resource page</h5>
+                <p>Search directions to local compost, recycling, and donation centers.</p>
+            </div>
+            <div></div>           
+        </div>
+        
+    </article>    
+
+    <article>
+        <h3>Brand identity.</h3>
+        <div>
+            <p>Carbonology primarily uses green due to the color's frequent  association with the environment. The app also includes various tints  and shades of green and purple to create a calming color palette with  cool tone colors. Open Sans was chosen for its easy readability.</p>
+            <img src="images/carbonology/branding.png" class="carbonImg">
         </div>
     </article>
 
-    <footer>
-        <nav class="navbar footerNav">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h2>Come chat with me!</h2> -->
-        <section>
-            <img src="images/logo_blue.svg" id="logo">
-            <h5>Ashley Chang</h5>
-        </section>
-        <!-- <p>come chat with me on:</p> -->
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
+    <article class="highFid highCarb">
+        <div class="highFidSect">
+            <div>
+                <h3>Stay updated.</h3>
+                <p>Stay updated on community events to participate in and news of current events.</p>
+            </div>
+            <div>
+                <img src="images/carbonology/stayupdated.gif">
+            </div>
         </div>
-    </footer>
+
+        <div class="highFidSect">
+            <div>
+                <h3>Learn more.</h3>
+                <p>Discover a product's recyclability, biodegration, carbon footprint, and alternative choices.</p>
+            </div>
+            <div>
+                <img src="images/carbonology/milk.gif">
+            </div>
+        </div>
+
+        <div class="highFidSect">
+            <div>
+                <h3>Scan a product's barcode.</h3>
+                <p>For convenience, scanning the product's barcode to learn about its level of sustainability and alternative choices.</p>
+            </div>
+            <div>
+                <img src="images/carbonology/scanning.gif">
+            </div>
+        </div>
+
+        <div class="highFidSect">
+            <div>
+                <h3>Rewards and redeem.</h3>
+                <p>Earn points through recycling and redeem coupons to use for items on your next grocery shopping trip.</p>
+            </div>
+            <div>
+                <img src="images/carbonology/rewards.gif">
+            </div>
+        </div>
+
+        <div class="highFidSect">
+            <div>
+                <h3>Nearby.</h3>
+                <p>Explore local recycling, compost, and donation centers close by.</p>
+            </div>
+            <div>
+                <img src="images/carbonology/recyclingCenter.gif">
+            </div>
+        </div>
+        
+    </article>
     
+    <!-- <article>
+        <h3>Outcomes.</h3>
+        <p>After an intense 3 days, my team and I underwent through two rounds of presentations, talking with a panel of industy professionals. We were awarded 2nd place out of the design-a-thon.</p>
+    </article> -->
+
+    <article class="reflections">
+        <h3>Takeaways.</h3>
+        <div>
+            <div>
+                <h4>Understand the expectations</h4>
+                <p>Because of the short timeline, it was crucial my teammates and I understood the expectations at the beginning and the goals of each step throughout the project. Doing this allowed me to focus on my work, and both collaborate smoothly with others and work independently.</p>
+            </div>
+            <div>
+                <h4>Quick iteration</h4>
+                <p>My team and I had to quickly focus on a solution to fit out users from the start. Creating quick, different iterations helped brainstorm and explore the variations to refine on, giving opportunities to select the best version that fits the user's needs, wants, and addresses their challenges.</p>
+            </div>
+            
+        </div>
+    </article>
+
+  </section>
+
+  <section class="otherProjects">
+    <h2>My other stories.</h2>
+    <div class="stories">
+        <div>
+            <h4>project 1</h4>
+            <div class="imgContainer">
+                <a href="#"><img src="images/berries.jpg" class="projectGraphic"></a>
+            </div>
+        </div>
+        <div>
+            <h4>project 2</h4>
+            <div class="imgContainer">
+                <a href="#"><img src="images/berries.jpg" class="projectGraphic"></a>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+
+  <section class="navEnd">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>
+
+    <h2>Contact me!</h2>
+      <div class="contactEnd">
+        <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+        <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+      </div>
+
+  </footer>
+
 </body>
 </html>

@@ -1,1254 +1,861 @@
-header{
-    margin: auto;
-    /* width: 80%;  */
-    text-align: center;
-    /* border-bottom: 1px solid #007EA8; */
 
-}
-
-section{
-    margin: 0 20px 0 20px;
-}
-
-header h1{
-    font-size: 29pt;
-    text-transform: uppercase;
-}
-
-.contactSect{
-    display:flex;
-    align-items: center;
-    gap:24px;
-    justify-content: center;
-}
-
-
-/* text styling start*/
-h2, h3, h4{
-    font-family: "Instrument Sans", serif;
-}
-
-nav, h1, h5, .name{
-    font-family: "Archivo", serif;
-}
-
-h5, .name{
-    font-style: italic;
-    font-size:24pt;
-    margin:0;
-    color:#007EA8;
-    font-weight: 700;
-}
-
-h1{
-    align-content: center;
-    font-size:30pt;
+/* ======== text styling ======== */
+body{
+    font-family: "Instrument Sans", sans-serif;
+    color:rgb(62, 62, 62);
 }
 
 h2{
-    font-size:22pt;
-    font-weight: 400;
+    font-size:28px;
+    margin:0 0 16px 0;
 }
 
 h3{
-    font-size: 18pt;
-    font-weight:400;
+    font-size:22px;
+    margin:0 0 16px 0;
 }
 
 h4{
-    font-size:14pt;
-    margin: unset;
-    font-weight:600;
+    font-size:19px;
+    margin: 0 0 16px 0;
 }
 
-.highlighter{
-    color:#007EA8;
-    text-align: center;
+h5{
+    font-size: 17px;
+    font-weight:700;
+    margin: 0 0 8px 0;
 }
 
-.highlighter2{
-    color:gray;
+p, blockquote{
+    font-size: 17px;
+    line-height:1.5em;
+    margin: 0 0 8px 0;
 }
 
-.mainpage h2{
-    margin:0 ;
+p:last-child{
+    margin-bottom:0;
 }
 
-p, li{
-    font-size:14pt;
+.positionDescrip li, .resumeAddInfo li, .userTesting ul li, .highFid div ul li, .resume li{
+    font-size: 17px;
+    line-height:1.5em;
+    margin: 0 0 8px 0;  
 }
 
-p, ul, ol, nav, time, blockquote, div li, table{
-    font-family: "Instrument Sans", serif;    
-    line-height: 1.5em;
-}
-
-.description nav ul li{
-    margin-bottom:8px;
-}
-
-blockquote{
-    font-size:16pt;
-    margin:30px;
-}
-
-#venTable th{
-    text-align: left;
-    width:20%;
-}
-
-#cuzTable th{
-    text-align: left;
-    width:25%;
-}
-
-/* text styling end*/
-
-.navbar ul, .VenSol nav ul{
-    list-style-type: none;
+/* ======== header ======== */
+.navbar ul{
+    list-style: none;
     padding-left: unset;
 }
 
-.navbar ul li a, header h1 a{
-    text-decoration: none;
-    color: #007EA8;
+header{
+    text-align: center;
+    margin: 32px auto 32px auto;
 }
 
-li a{
-    color:rgb(35, 35, 35);
+.contact{
+    display:flex;
+    gap:32px;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo{
-    width: 50px;
-    height:50px;
-}
-
-#footerLogo{
-    width:40px;
-    height:40px;
-}
-
-#linkedIcon{
-    width:25px;
-    height:25px;
-}
-
-#emailIcon{
+.emailIcon{
     width:30px;
-    height:30px;
 }
 
-.navbar li a:hover, .button:hover{
+.linkedIcon{
+    width:25px;
+}
+
+.navbar li{
+    margin:16px;
+    text-decoration:none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color:#016FB9;
+}
+
+header img{
+    width:88px;
+    height:auto;
+}
+
+
+/*======== project cards ========*/
+.projectHook{
+    font-weight:700;
+}
+
+.projectGraphic{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.projectTitle{
+    font-size: 28px;
+}
+
+.projectTitle ul li {
+    list-style: none;
+    display: inline; 
+    margin-right:8px;
+}
+
+.projectTitle ul li:last-of-type{
+    margin-right:unset;
+}
+
+.projectTitle ul{
+    padding-left:unset;
+    margin-bottom: 16px;
+}
+
+.companyName, .role{
+    color: #727272;
+    font-weight: 400;
+}
+
+.projectCard{
+    width:80%;
+    margin:auto auto 72px auto;
+}
+
+.projectCard > p, .halfSect > p, .viewProjectButton{
+    margin-bottom:16px;
+}
+
+.viewProjectButton{
+    display:flex;
+    align-items: center;
+    gap:8px;
+    width:fit-content;
+    color:#016FB9;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom:24px;
+}
+
+.viewProjectButton:hover, .navbar li a:hover{
     text-decoration: underline 1px;
     text-underline-offset: 4px;
-    color:#007EA8;
+    color:#016FB9;
 }
 
-.button:hover img{
-    transform: translateX(4px);
-    transition:0.1s ;
-}
-
-.button a{
-    display:flex;
-    gap:6px;
-    width:fit-content;
-    align-items: center;
+.viewProjectButton > p{
+    margin-bottom:0;
 }
 
 .arrow{
     width:20px;
     height:20px;
+    transition:1s;
 }
 
-.navbar li {
-    padding:4px;
+.viewProjectButton:hover .arrow{
+    transform: translateX(4px);
+    transition:0.1s;
 }
 
-.description, #skills{
-    padding-bottom: 50px;
+.projectGraphic{
+    transition:0.4s ease;
 }
 
-.description:last-of-type{
-    padding-bottom: 0;
+.projectGraphic:hover{
+    transform: scale(1.01);
 }
 
-.sectdiv:last-of-type{
-    justify-content: left;
-}
-
-
-.thoughts{
-    width:60%;
-    margin:auto;
-}
-
-
-.sectdiv h1{
-    margin-bottom:0px;
-    margin-top:unset;
-}
-
-.description{
-    margin: auto;
-}
-
-.imgContain{
-    margin:auto;
-    height:500px;
-}
-
-.mainpage article a img{
-    overflow: hidden;
-    object-fit: cover;
-    border-radius: 24px;
-}
-
-footer{
-    background-image: url("images/footer2.svg");
-    background-size: cover;
-    margin: 30px 0 0 0;
-    background-position: right bottom;
-    padding-bottom:30px;
-}
-
-footer > div {
-    list-style-type: none;
-    display: flex;
-    padding-left: unset;
-    margin: auto;
-    width: 80%;
-    gap:10px;
-    margin-top:8px;
-}
-
-
-footer h2, footer div{
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-}
-
-footer section{
-    display:flex;
-    align-items: center;
-    gap:10px;
-    margin-bottom:16px;
-    justify-content: center;
-}
-
-#about > article{
-    margin:auto;
-    margin-bottom:50px;
-}
-
-#about h3{
-    margin-bottom:16px;
-    margin-top: 3em;
-}
-
-#about {
-    width:80%;
-    margin:auto;
-}
-
-#resume > h2:first-child{
-    text-align: center;
-    margin-bottom:25px;
-}
-
-.description h2{
-    margin-bottom:16px;
-    margin-top:16px;
-}
-
-.description h3, .description p{
-    margin: 10px 0px;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-body{
-    animation: fadeIn ease-in 1s;
-}
-
-#resume > article > h3, #resume > article >p, #resume > article >h4{
-    margin: unset;
-    padding-bottom: 5px;
-}
-
-.hifi{
-    width:60%;
-    margin:auto;
-}
-
-.column > img{
-    padding-bottom: 10px;
-}
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-.internalpage, .internalpageCuz{
-    margin-top: 3em;
-}
-
-.visualDes div{
-    width:60%;
-    margin:auto;
-    display: grid;
-    align-content: center;
-    gap:50px;
-}
-
-.visualDes div:first-child{
-    width:45%;
-}
-
-.internalpage article:not(:first-of-type), .internalpageCuz article:not(:first-of-type){
-    margin: 6em 0em;
-}
-
-.internalpage article:first-of-type, .internalpageCuz article:first-of-type{
-    margin-bottom: 2em;
-}
-
-.internalpage article h3, .internalpageCuz article h3{
-    margin-bottom:2px;
-}
-
-.research div:not(:first-of-type){
-    margin: 65px 0px;
-}
-
-.research ol{
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    list-style-position: inside;
-}
-
-.research li{
-    font-weight:bold;
-}
-
-#venTable tr{
-    height:40px;
-}
-
-.highfid div{
+.imgContainer{
+    overflow:hidden;
+    border-radius: 32px;
     width:100%;
-    height:auto;
-    margin:16px 0px;
+    height:300px;
 }
 
-.highfid{
-    background-color: #FAFAFA;
-    padding:20px 60px;
-    margin-top:100px;
-    border-radius: 16px;
-}
-
-.highfidVenmo div{
-    width:100%;
-    height:auto;
-    margin:16px 0px;
-}
-
-.highfidCuz div{
-    margin-bottom:50px;
-    gap:50px;
-}
-
-.highfidVenmo, .highfidCuz{
-    margin-top:100px;
-}
-
-.reflection{
-    background-color: rgb(48, 49, 52);
-    padding: 20px;
-}
-
-.content{
-    color: white;
-    margin: auto;
-    padding: 20px;
-}
-
-.internalpage img{
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.internalpageCuz img{
-    margin: auto;
-}
-
-.bottomnavbar nav ul{
-    padding-left: unset;
-    display: flex;
-    justify-content: center;
-    color:rgb(37, 71, 173);
-}
-
-.bottomnavbar nav ul li{
-    list-style-type: none;  
-    padding: 20px;  
-}
-
-.bottomnavbar nav ul li a{
-    text-decoration: none;
-}
-
-.mainpage img{
-    transition: 0.5s;
-    height:100%;
-}
-
-.more img{
-    transition: 0.5s;
-}
-
-
-.mainpage img:hover, .more img:hover{ 
-    scale: 1.02;
-}
-
-.critique{
-    margin-bottom: 6em;
-}
-
-.mainpage article{
-    margin-bottom:30%;
-}
-
-.CarbSol{
-    background-color:rgb(226, 243, 220);
-}
-
-.VenSol{
-    background-color:rgb(243, 250, 255);
-}
-
-.cuzSol{
-    padding: 30px 40px;
-    background-color:rgb(241, 247, 237);
-}
-
-.solution{
-    padding: 30px 40px;
-    border-radius: 8px;
-}
-.solution h2, .VenSol p{
-    margin-top: 10px;
-    margin-bottom:10px;
-}
-
-.cuzSol p{
-    margin-top:unset;
-}
-
-.button a{
-    text-decoration: none;
-    list-style-type: none;
-    color:#007EA8;
-    font-size:16pt;
-}
-
-.mainpage h1{
-    width:80%;
-}
-
-.more h2{
-    margin:0;
-}
-
-#myVideo{
-    max-height:100%;
-    max-width:100%;
-    border-radius: 8px;
-}
-
-.moreButton{
-    align-items: center;
-}
-
-.moreButton p{
-    margin-left:auto;
-    text-align: center;
-}
-
-#theVideo{
-    margin: 0 auto 100px auto;
-}
-
-#education ul{
-    margin-top: 0;
-}
-
-#education p{
-    margin: 0;
-}
-
-.headerimg{
-    width: 100%;
-    height: 500px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-#headCarb{
-    background-image: url(images/carbonology/carbonologyMockup.png);
-}
-
-#headVen{
-    background-image: url(images/venmo/diagonalmockup.png);
-    background-position: 0 -30px;
-}
-
-#headCuz{
-    background-image: url(images/cuzen.png);
-}
-
-#headPet{
-    background-image: url(images/petpulse/cover.jpg);
-}
-
-#headThesis{
-    background-image: url(images/thesis/mockup.png);
-}
-
-.top h3, .top p{
-    margin:0;
-}
-
-.top aside div{
-    margin-top:40px;
-
-}
-
-.summary p:first-of-type{
-    margin-bottom: 30px;
-}
-
-
-.blocks{
-    display:block;
-    align-items: center;
-}
-
-.blocks img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    border-radius: 24px;
-}
-
-.more{
-    margin:0 20px;
-}
-
-.imgFoot img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    border-radius: 24px;
-}
-
-.imgFoot h4{
-    margin-top:12px;
-}
-
-.imgFoot div h4 a{
-    text-decoration: none;
-    color:black;
-}
-
-.otherProj{
-    text-align: center;
-    margin: 100px auto 0 auto;
-    width:80%;
-}
-
-.imgFoot div{
-    margin-bottom:32px;
-}
-
-.break ul li{
-    list-style-type: none;
-    margin-bottom: 32px;
-}
-
-.break ul li:last-of-type{
-    margin-bottom:0;
-}
-
-.break ul{
-    margin-bottom:0;
-}
-
-.break {
-    padding-left:0;
-    border: 1px solid #007EA8;
-    border-radius:16px;
-    padding:26px; 
-}
-
-.break h2{
-    margin-top:unset;
-    margin-bottom:20px;
-}
-
-.break ul li img{
-    height:auto;
-    width:100%;
-    border-radius: 8px;
-}
-
-.break ul li p{
-    margin-bottom:unset;
-    margin-top:8px;
-}
-
-#pillars > div > p{
-    margin-top:8px;
-}
-
-.moreButton h1{
-    margin:0;
-}
-
-.innerP{
-    margin:72px 0px;
-}
-
-.innerP img{
-    width:100%;
-}
-
-#shrink img{
-    width:80%;
-}
-
-.visDes > div{
-    margin: 32px 0;
-}
-
-.set p{
-    margin-bottom:0;
-}
-
-.set h3{
-    margin-top:0;
-}
-
-.theGif img{
-    width:250px;
-}
-
-.portrait2 img{
-    width:60%;
-    display: block;
-    margin:auto;
-}
-
-.portrait2 > h2{
-    text-align: center;
-}
-
-.imgWrap:hover .imageDescrip{
-    visibility: visible;
-    opacity: 1;
-}
-
-.imgWrap{
-    position: relative;
-    height: fit-content;
-    width: fit-content;
-}
-
-.imageDescrip{
-    position: absolute;
-    bottom: 5%;
-    left:12%;
-    color: #ffffff;
-    padding:8px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s ease;
-    width:70%;
-}
-
-#office > img, #middleSmImg, .cmsi img, #des115 > img, #cmsiGraphic img{
-    box-shadow: 0px 11px 49px -6px rgba(0,0,0,0.1);
-}
-
-.cmsi img{
-    width: 50%;
-}
-
-.cmsi{
-    text-align: center;
-    margin:auto;
-}
-
-.extraSpace li{
-    margin-bottom: 1em;
-}
-
-.mainpage article > div > a{
-    display: block;
-}
-
-.imgContain, .imgContain2{
-    border-radius: 24px;
-}
-
-#whoAmI{
-    display:flex;
-    align-items: baseline;
-    gap: 10px;
-}
-
-#whoAmI h2{
-    margin-bottom:0px;
-}
-
-.break ul{
-    padding-left:0;
-}
-
- 
-.footerNav{
-    display: flex;
-    justify-content: center;
-    margin-bottom:72px;
-    text-align: center;
-}
-
-.more > div:first-of-type{
+.halfSect{
     margin-bottom: 72px;
 }
 
-.graphic h2{
-    margin: 0px 0 10px 0;   
+.navEnd{
+    text-align: center;
+    margin-bottom:72px;
 }
 
-.graphic p{
-    margin:8px 0;
+.stories div{
+    margin-bottom:32px;
 }
 
-.graphicsover img{
-    border-radius: 24px;
+.projectHalf .imgContainer > a{
+    width:100%;
+    height:300px;
+    overflow:hidden;
 }
 
-.graphic article{
+.projectHalf .imgContainer > a > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+
+/* ======== footer ======== */
+footer{
+    width:60%;
+    margin:auto auto 72px auto;
+    text-align: center;
+}
+
+footer h2{
+    margin-bottom:16px;
+}
+
+.contactEnd{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    justify-content: center;
+}
+
+
+/* ======== project internal pages (pet pulse) ======== */
+.startImg{
+    width:100%;
+    height:400px;
+    overflow: hidden;
+    margin-bottom:72px;
+}
+
+.startImg img{
+    width:100%;
+    height:auto;
+    object-fit: contain;
+}
+
+.projectIntro{
+    width:90%;
+    margin:auto auto 72px auto;
+}
+
+.projectMajor > p{
+    margin:16px 0;
+}
+
+.projectMinor > div{
+    margin-bottom:16px;
+}
+
+.projectBody, .otherProjects{
+    width:90%;
+    margin:auto;
+}
+
+article{
     margin-bottom:100px;
 }
+
+.emphasisSolution{
+    background-color:#F0F0F0;
+    padding:16px;
+    border-radius: 8px;
+}
+
+.quotes blockquote{
+    margin-bottom:32px;
+}
+
+blockquote span{
+    display:block;
+    margin-top:8px;
+}
+
+blockquote{
+    margin: 32px 40px 0px 40px;
+}
+
+.projectImg, .cuzenImg, .petpulseImg, .carbonImg{
+    width:100%;
+    height:auto;
+    border-radius:16px;
+    box-shadow: 0px 00px 16px -8px rgba(44,37,37,0.15);
+    margin-bottom:16px;
+}
+
+.cuzenImg, .petpulseImg, .carbonImg{
+    margin-top:16px;
+}
+
+.caption{
+    color: #727272;
+    text-align: center;
+}
+
+.highFidSect div img, .highFidSectSplit div div img{
+    width:60%;
+    height:auto;
+    display:flex;
+    margin:auto;
+}
+
+.highFidSect{
+    margin-bottom:72px;
+}
+
+.highFidSectSplit > div > div {
+    width:50%;
+}
+
+
+.keyTakes div{
+    margin-bottom:16px;
+}
+
+.organize div{
+    margin-bottom:16px;
+}
+
+.layoutSolution > p{
+    margin-bottom:32px;
+}
+
+.otherProjects{
+    text-align: center;
+}
+
+.reflections > div > div{
+    margin-bottom:16px;
+}
+
+
+
+/* ======== carbonology ======== */
+.userResearch li{
+    margin-bottom:8px;
+}
+
+.solutionFeatures > div{
+    margin-bottom:16px;
+}
+
+.userResearchSurvey {
+    margin-bottom:32px;
+}
+
+.highCarb{
+    background-color: #FAFAFA;
+    padding:32px;
+    border-radius:16px;
+}
+
+
+
+/* ======== cuzen matcha ======== */
+.highFidDescrip {
+    margin-bottom: 100px;
+}
+
+.highFidGifs{
+    width:100%;
+    height:auto;
+    margin:32px 0 72px 0;
+}
+
+.highFidGifs:last-child{
+    margin-bottom:unset;
+}
+
+.mappingSolutions > p{
+    margin-bottom:32px;
+}
+
+
+/* ======== photography page ======== */
+.photography h2, .graphicPg h2{
+    text-align: center;
+    margin-bottom:32px;
+}
+
+.photography, .graphicPg{
+    width:90%;
+    margin:auto;
+}
+
+.photogrid div img{
+    width:100%;
+    height:auto;
+    margin-bottom:16px;
+}
+
+
+/* ======== graphics page ======== */
+.graphicPg h2{
+    text-align:center;
+}
+
+
+/* ======== resume page ======== */
+.resumeIntro{
+    text-align: center;
+    margin-bottom:72px;
+}
+
+.resumeIntro > div{
+    display:flex;
+    justify-content: center;
+    gap:72px;
+}
+
+.resumeIntro div div > h3{
+    margin-bottom:8px;
+}
+
+.resumeIntro > h2{
+    margin-bottom:72px;
+}
+
+.resume, .resumeAddInfo{
+    width:90%;
+    margin:auto;
+}
+
+.resumeAddInfo > div ul, .resumeAddInfoSplit ul{
+    list-style: none;
+    padding-left:unset;
+    margin:unset;
+}
+
+.edu > article > div{
+    margin-bottom:32px;
+}
+
+.eduDescrip ul{
+    margin:unset;
+}
+
+.resumeAddInfo li:last-child{
+    margin-bottom:0;
+}
+
+.resumeAddInfoSplit{
+    background: #fafafa;
+    border-radius: 16px;
+    padding:32px;
+}
+
+
+/* ======== about page ======== */
+.textWeak{
+    color: #727272;
+}
+
+.aboutMe{
+    text-align:center;
+}
+
+.aboutPg, .aboutMe{
+    margin:0 auto 72px auto;
+    width:90%;
+}
+
+.whoAmI > div:first-of-type, .designPillar > p:first-of-type, .designPillar > div > div{
+    margin-bottom:16px;
+}
+
+.portrait{
+    width:20%;
+    height:auto;
+    border-radius: 100px;
+    margin-top:32px;
+}
+
+.aboutMe img{
+    width:80%;
+    height:auto;
+}
+
 
 
 
 @media only screen and (min-width: 600px) {
 
-    .organizer div{
-        width:50%;
+    /* ======== text styling ======== */
+    h2{
+        font-size:36px;
     }
 
-    #cmsiGraphic, #dd{
+    h3{
+        font-size:30px;
+    }
+
+    h4{
+        font-size:24px;
+    }
+
+    /* ======== navbar styling ======== */
+    header, .navbar ul{
         display: flex;
-        gap:72px;
-    }
-
-    .graphic{
-        margin-bottom:100px;
-        width:60%;
-    }
-
-    #mockupExamples > img, #mockupExamples{
-        margin-bottom:32px;
-    }
-
-    .mockupEx{
-        display:flex;
-        justify-content: space-evenly;
         align-items: center;
-        gap:32px;
-        margin-bottom:32px;
-    }
-
-    .mockupEx div{
-        width:50%;
-    }
-
-    .more > div:first-of-type{
-        margin-bottom: 0;
-    }
-    
-    footer{
-        padding: 50px; 
-    }
-
-    .contactSect{
-        display:flex;
-        justify-content: unset;
-    }
-
-    footer section{
-        justify-content: unset;
-    }
-
-    #whoAmI{
-        display: block;
-    }
-
-    #whoAmI h2{
-        margin-bottom:8px;
-        margin-top:18px;
-    }
-
-    #about > article{
-        width:80%;
-        padding: 10px;
-    }
-
-    .internalpage, .content, .internalpageCuz{
-        width: 60%;
-    }
-
-    .sectdiv p{
-        margin-left: auto;
-        align-self: center;
-        text-align: right;
-    }
-
-    section{
-        margin: auto;
-        width: 80%; 
-    }
-
-    #des115, #office{
-        display:flex;
-        gap:50px;
         justify-content: center;
-    }
-
-    #des115mockup{
-        width:50%;
-    }
-
-
-    #office img{
-        width:30%;
-        height:fit-content;
-    }
-
-    .sm{
-        display:flex;
-        gap: 32px;
-        justify-content: center;
-    }
-
-    .sm img{
-        width:27%;
-        height:fit-content;
-    }
-
-    #middleSmImg{
-        width:26%;
-    }
-
-    .set{
-        display:flex;
-        gap:72px;
-        align-items: center;
-    }
-
-    .set div{
-        width:50%;
-    }
-    .set img{
-        width:70%;
-    }
-
-    .userPerDescrip div p{
-        height:18%;
-    }
-
-    .innerP3{
-        width:40%;
-        display:block;
-        margin:auto;
-    }
-
-    .innerP2 img{
-        width:30%;
-        display:block;
-        margin:auto;
-    }
-
-    .more div{
-        margin-bottom:0;
-        width:100%;
-
-    }
-
-    .userPerDescrip{
-        display:flex;
-        gap:50px;
-    }
-
-    .mainpage article{
-        margin-bottom:10%;
-    }
-
-    .mainpage h1{
-        margin:auto;
-        padding-bottom: 32px;
-    }
-
-    .more div:last-child{
-        text-align: right;
-    }
-
-    .moreButton{
-        display:flex;
-        margin-top:8px;
-    }
-
-    .imgContain{
-        width:80%;
-        overflow:hidden;
-        height:500px;
-    }
-
-    .imgContain2{
-        overflow:hidden;
-        width:100%;
-        height:400px;
-    }
-
-    .imgFoot{
-        display:flex;
-        width:50%;
-        margin:auto;
-        justify-content: center;
-        gap:50px;
-        padding-top:25px;
-    }
-    
-    .imgFootContain{
-        display: flex;
-        width:250px;
-        height:250px;
-    }
-
-    .break ul li{
-        width:25%;
-        margin-bottom: 0px;
-    }
-
-    .story{
-        display:flex;
-    }
-
-    .story div{
-        width:80%;
-    }
-
-    .story h2{
-        margin-bottom:8px;
-    }
-
-    
-
-    #portrait img{
-        margin-left:50px;
-    }
-
-    .break ul{
-        display:flex;
-        gap:20px;
-        padding:unset;
     }
 
     header{
-        display: flex;
-        height:100px;
-        align-items: center;
-        justify-content: space-around;
         width:80%;
+        margin: 0 auto 0 auto;
     }
 
-    header > a, header > div{
+    .navbar ul{
+        gap:32px;
+    }
+
+    header > a, header > .contact{
         flex:2;
     }
 
-    header > a{
+    header > a {
         display:flex;
         justify-content: flex-start;
     }
 
-    header > .contactSect{
+    header > .contact{
         display:flex;
         justify-content: flex-end;
     }
 
-    header > a:after, header > div:before{
+    header > a:after, header > .contact:before{
         content:'';
         display:flex;
-        justify-content: space-around;
     }
 
-    #contactOpt{
-        padding-left:24px;
+    .emailIcon{
+        width:27px;
     }
 
-    .navbar ul {
-        list-style-type: none;
-        display: flex; 
-        gap:16px;
+    .linkedIcon{
+        width:25px;
     }
 
-    .navbar ul li a{
-        padding: 0px 20px;
-        font-size:16pt;
+
+    /* ======== main page project card styling ======== */
+    .projectCard{
+        width:60%;
+        margin-bottom:100px
     }
 
-    .description > div{
-        width: 50%;
+    .imgContainer{
+        width:100%;
+        height:500px;
     }
 
-    .description{
+    .halfSect > .imgContainer{
+        height:400px;
+    }
+
+    .projectTitle{
+        font-size:36px;
+    }
+    
+    .halfSect{
+        width:50%;
+        margin-bottom:32px;
+    }
+
+    .halfSect > p{
+        margin-bottom: 16px;
+    }
+
+    .projectCard:last-of-type{
         display:flex;
-        width: 80%;
-        justify-content: center;
+        gap:72px;
     }
 
-    #bottomsection{
-        display: flex;
+    .projectHalf{
+        display:flex;
+        gap:72px;
+    }
+
+
+    /* ======== footer ======== */
+    footer{
+        text-align: left;
+    }
+
+    .contactEnd{
+        justify-content: start;
+    }
+
+
+    /* ======== project internal pages (pet pulse) ======== */
+    .startImg{
+        height:450px;
+    } 
+
+    .projectIntro{
         width:80%;
-        margin: auto;
-    }
-
-    #education, #awards{
-        width: 50%;
-    }
-
-    #skills{
-        width: 80%;
-        margin: auto;
-        padding:30px;
-        margin-bottom: 3em;
-    }
-
-    .photogrid{
-        display: flex;
-        gap: 30px;
-        margin: 50px auto;
+        display:flex;
+        justify-content: space-evenly;
+        gap:72px;
     }
     
-    .column{
-        width: 33%;
+    .projectMajor{
+        width:50%;
     }
     
-    .column > img{
-        width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-    }
-    
-    .column > p{
-        margin-bottom:30px;
+    .projectBody{
+        width:50%;
+        margin:auto;
     }
 
-    .intro{
-        display: flex;
-        justify-content: center;
-        gap:120px;
+    blockquote{
+        margin: 32px 70px 0px 70px;
     }
 
-    .intro img{
-
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    .keyTakes, .solutionFeatures {
+        display:flex;
+        gap:72px;
     }
 
-    .intro div:first-child{
-        width:30%;
-    }
-
-    .intro div{
-        align-self: center;
-        width:63%;
-    }
-
-    .top{
-        display: flex;
-        width: 100%;
-        gap:55px;
-    }
-
-    aside{
-        justify-content: right;
-        margin-left: auto;
+    .keyTakes > div{
         width:50%;
     }
 
-    .summary{
-        width: 90%;
+    .organize{
+        display:flex;
+        gap:72px;
     }
 
-    #pillars{
-        display: flex;
-        gap:100px;
-        margin-top:16px;
-    }
-
-    #pillars div{
+    .organize > div{
         width:50%;
     }
 
-    #graphics{
-        margin-left:auto;
+    .organize:first-of-type{
+        margin-bottom:16px;
     }
 
-    .sectdiv{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        gap: 16px;
-    }
-
-    .sum div{
-        width:80%;
-    }
-
-    .sum{
-        width:80%;
-        margin:auto;
-        padding-bottom:16px;
-    }
-    
-    .sum p{
-        margin:16px 0;
-        width:fit-content;
-    }
-
-    .more{
+    .stories{
         display:flex;
-        width:64%;
         margin:auto;
-        gap:65px;
+        gap:72px;
+        width:60%;
     }
 
-    .paragraph div{
-        display: flex;
-        gap:50px;
-        padding-bottom: 40px;
-    }
-
-    .paragraph p{
-        margin:unset;
-        width:80%;
-    }
-
-    .paragraph{
-        h4{
-            width:15%;
-        }
-    }
-
-    .align{
-        display:flex;
-        align-items: center;
-    }
-
-    .petpulseGif img{
-        width:250px;
+    .stories > div > .imgContainer{
         height:auto;
     }
 
-    .petpulseGif{
-        gap:50px;
-        margin:0 auto 100px auto;
-        
+    .otherProjects{
+        margin-top:100px;
     }
 
-    .theproblem{
+    .highFidSect{
         display:flex;
-        gap:20px;
+        gap:72px;
     }
 
-    .theproblem h2{
-        width:100%;
-        margin-top: 18px;
-    }
 
-    .theproblem2{
-        display: flex;
-        gap:20px;
-    }
-
-    .theproblem2 h2{
-        width:75%;
-    }
-    
-
-    .visualDes, .cuzImg{
-        display:flex;
-    }
-
-    .cuzImg{
-        width:75%;
-        height: 25%;
-        margin:auto;
-    }
-
-    .cuzImg img{
+    .highFidSect div, .highFidSectSplit div > div{
         width:50%;
     }
 
-    .cuzImgDec{
-        width:80%;
-        display:block;
+    .highFidSect div img, .highFidSectSplit div div img{
+        width:200px;
+        height:auto;
         margin:auto;
     }
 
-    .stats{
-        margin:unset;
+    .highFidSectSplit > div  {
         display:flex;
+        gap:72px;
+        margin-bottom:72px;
     }
 
-    .statsCuz{
-        width:80%;
-        gap:50px;
+    .highFidSect div p{
+        margin-bottom:16px;
+    }
+    
+    .highCarb > .highFidSect > div > img{
+        width:300px;
+        height:auto;
+    }
+
+
+    /* ======== carbonology ======== */
+    .solutionFeatures div{
+        width:33%;
+        margin-bottom:32px;
+    }
+
+    .highCarb div{
+        align-items:center;
+    }
+
+
+    /* ======== cuzen matcha ======== */
+    .qualitativeResearch > div{
+        display:flex;
+        justify-content: center;
+        gap:32px;
+    }
+
+    .qualitativeResearch{
+        text-align:center;
+        margin: 32px 0 40px 0;
+    }
+
+    .qualitativeResearch div > div > h4{
+        margin-bottom:8px;
+    }
+
+    .qualitativeResearch div > div{
+        width:33%;
+    }
+
+    .qualitativeResearch p:first-child{
+        margin-bottom:16px;
+        font-weight:600;
+    }
+
+    .highFidDescrip > div{
+        display:flex;
+        gap:72px;
+    }
+
+    .highFidDescrip h4, .highFidDescrip h5{
+        width:30%;
+    }
+
+    .highFidDescrip > div > div{
+        width:70%;
+    }
+
+
+    /* ======== photography page ======== */
+    .photogrid{
+        display:flex;
+        gap:32px;
+    }
+
+    .column{
+        width:33%;
+        height:auto;
+    }
+
+    .photogrid div img{
+        margin-bottom:32px;
+    }
+
+    .photography, .graphicPg{
+        width:60%;
+    }
+
+
+
+    /* ======== graphic design page ======== */
+    .graphicDisplayDiv > div{
+        width:50%;
+    }
+
+    .graphicDisplayDiv div img{
+        width:100%;
+        height:auto;
+        box-shadow: 0px 00px 16px -8px rgba(44,37,37,0.15);
+    }
+
+    .graphicDisplayDiv, .graphicUCD > div{
+        display:flex;
+        gap:72px;
+    }
+
+    .graphicUCD img{
+        width:100%;
+        height:auto;
+        margin-bottom:32px;
+        border-radius:8px;
+    }
+
+
+
+    /* ======== resume page ======== */
+    .resume, .resumeAddInfo{
+        width:60%;
         margin:auto;
     }
 
-    .funct{
-        width:75%;
+    .resume article{
+        display:flex;
+        gap:72px;
     }
 
-    .gif{
-        width:115%;
+    .position{
+        width:50%;
     }
 
-    #initalDes{
-        display: flex;
-        gap:50px;
+    .positionDescrip{
+        width:50%;
     }
 
-    #col2{
-        width:200%;
+    .resume ul{
+        padding-left:unset;
+        margin-top:unset;
     }
+
+    .resumeAddInfo{
+        display:flex;
+        gap:72px;
+    }
+
+    .resumeAddInfo article{
+        width:50%;
+    }
+
+    .resumeAddInfo > div{
+        display:flex;
+        width:50%;
+        gap:72px;
+    }
+
+    .resumeAddInfoSplit > div{
+        display:flex;
+        gap:72px;
+    }
+
+
+    /* ======== about page ======== */
+    .aboutPg, .aboutMe{
+        width:60%;
+    }
+    
+    .designPillarList{
+        display:flex;
+        gap:72px;
+    }
+
+    .designPillarList div{
+        width:33%;
+    }
+
+    .breakTime > div{
+        display:flex;
+        gap:32px;
+    }
+
+    .breakTime{
+        margin-top:unset;
+    }
+
+    .breakTime > div > div{
+        width:25%;
+    }
+
+    .breakTime div div img{
+        width:100%;
+        height:auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    
 
 }

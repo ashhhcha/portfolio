@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+  <!--My Styles-->
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- My Script -->
+  <script src="script.js" defer></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- favi icon -->
+  <link rel="icon" type="image/x-icon" href="images/favi.svg">
+
+  <title>Photography</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo_outline.svg" alt="logo black" id="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </header>
+  <header>
 
-    <section id="photography">
-        <h2 class="highlighter">the world from my point of view</h2>
-        <div class="photodescription">
-        </div>
+    <a href="index.html"><img src="images/Ashley.svg"></a>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact">
+      <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+      <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+    </div>
+
+  </header>
+
+  <section class="photography">
+        <h2>The world from my point of view.</h2>
         <div class="photogrid">
             <div class="column">
+                <img src="images/photography/mirrorboat.jpg" alt="back of the boat with a mirror">
                 <img src="images/photography/remi1.jpg" alt="anna">
                 <img src="images/photography/remi2.jpg" alt="remiid">
                 <img src="images/photography/wenwen.JPG" alt="remiid jump">
@@ -47,6 +55,7 @@
 
             </div>
             <div class="column">
+                <img src="images/photography/gates.jpg" alt="tori gates in japan">
                 <img src="images/photography/iceland.JPG" alt="football game 1">
                 <img src="images/photography/deathstar.jpg" alt="football game 2">
                 <img src="images/photography/xiaopingguo.JPG" alt="death star">
@@ -54,6 +63,7 @@
                 <img src="images/photography/stairs.jpg" alt="stairs">
             </div>
             <div class="column">
+                <img src="images/photography/fence.jpg" alt="fence looking over the sea">
                 <img src="images/photography/fball1.jpg" alt="iceland">
                 <img src="images/photography/fball2.jpg" alt="hand">
                 <img src="images/photography/final.jpg" alt="wenwen sign"> 
@@ -63,39 +73,26 @@
         </div>
     </section>
 
-    <article class="otherProj">
-        <h2>take a look at my other projects!</h2>
-        <div class="imgFoot">
-            <div>
-                <a href="cuzen.html" class="imgFootContain"><img src="images/cuzen.png"></a>
-                <h4><a href="cuzen.html">Cuzen</a></h4>                
-            </div>
-            <div>
-                <a href="graphics.html" class="imgFootContain"><img src="images/gifs/cropTractor.gif"></a>
-                <h4><a href="graphics.html">Graphics</a></h4> 
-            </div>
-        </div>
-    </article>
 
-    <footer>
-        <nav class="navbar footerNav">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h2>Come chat with me!</h2> -->
-        <section>
-            <img src="images/logo_blue.svg" id="logo">
-            <h5>Ashley Chang</h5>
-        </section>
-        <!-- <p>come chat with me on:</p> -->
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </footer>
+  <section class="navEnd">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>
+
+    <h2>Contact me!</h2>
+      <div class="contactEnd">
+        <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+        <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+      </div>
+
+  </footer>
 
 </body>
 </html>

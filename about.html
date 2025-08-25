@@ -1,99 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+  <!-- Normalize CSS for browser compatability -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+  <!--My Styles-->
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- My Script -->
+  <script src="script.js" defer></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- favi icon -->
+  <link rel="icon" type="image/x-icon" href="images/favi.svg">
+
+  <title>About</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo_outline.svg" alt="logo black" id="logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
-        </div>
-    </header>
-    <section id="about">
-        <article class="portrait2">
-            <h2>Hey there! I'm <span class="name">Ashley</span>, also known as a:</h2>
-            <img src="images/about/image1small.png" alt="portrait of Ashley Chang">
+  <header>
 
-            <div class="story">
-                <div id="whoAmI">
-                    <h2><span style="color:#007EA8">Who Am I?</span></h2>
-                    <h4>(as a designer)</h4>
-                </div>
-                <p>I am a designer who loves prototyping and using my skills to support communities through designed experiences. Ethical design is important to me, and I actively work to make a positive impact through design.</p>
-            </div>
-        </article>
+    <a href="index.html"><img src="images/Ashley.svg"></a>
 
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
 
-        <article>
-            <h2><span style="color:#007EA8">My Design Pillars</span></h2>
-            <div id="pillars">
-                <div>
-                    <h4>Usability is key.</h4>
-                    <p>Patricia Moore's quote, "Stop designing for disability and start designing for usability," greatly influenced my design approach. I aim to create designs that are accessible to everyone and promote an inclusive experience for all users.</p>
-                </div>
-                <div>
-                    <h4>Learning is a collaborative process.</h4>
-                    <p>There will be ideas and perspectives that others can offer an alternative and further the project's success. I value keeping an open mind to others' voices and input.</p>
-                </div>
-            </div>
-        </article>
+    <div class="contact">
+      <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+      <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+    </div>
 
-        <article>
-            <div class="break">
-            <h2><span style="color:#007EA8">Break time? You can find me:</span></h2>
+  </header>
+
+  <section class="aboutMe">
+    <h2>Hey there! I'm Ashley,<br>also known as a:</h2>
     
-                <ul>
-                    <li><img src="images/about/onepiece.png"><p>&#128250; watching anime (currently into One Piece)</p></li>
-                    <li><img src="images/about/dumpling.jpg"><p>&#127836; cooking in attempt to replicate my grandma's recipes</p></li>
-                    <li><img src="images/about/book.jpg"><p>&#128216;  reading novels (recently finished Michelle Zauner's Crying in H Mart)</p></li>
-                    <li><img src="images/about/ceramics.jpg"><p>&#129521; wheel throwing pottery and making ceramic sculptures</p></li>
-                    <!-- <li><img src="images/about/berries.jpg"><p>&#127817; browsing around the farmer's market</p></li> -->
-                </ul>
-            </div>
-        </article>
-    </section>
-    <footer>
-        <nav class="navbar footerNav">
-            <ul>
-                <li><a href="index.html">projects</a></li> 
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h2>Come chat with me!</h2> -->
-        <section>
-            <img src="images/logo_blue.svg" id="logo">
-            <h5>Ashley Chang</h5>
-        </section>
-        <!-- <p>come chat with me on:</p> -->
-        <div class="contactSect">
-            <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" id="emailIcon" alt="email icon"></a> 
-            <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" id="linkedIcon" alt="linkedin icon"></a>
+    <img src="images/about/portraittext.png">
+  </section>
+
+  <section class="whoAmI aboutPg">
+    <div>
+        <h3>Who am I?</h3>
+        <p class="textWeak">(as a designer)</p>
+    </div>
+    <div>
+        <p>I am a designer who loves prototyping and using my skills to support  communities through designed experiences. Ethical design is important to me, and I actively work to make a positive impact through design.</p>
+    </div>
+  </section>
+
+  <section class="designPillar aboutPg">
+    <h3>My Design Pillars.</h3>
+    <p class="textWeak">(the principles that guide my work)</p>
+    <div class="designPillarList">
+        <div>
+            <h5>Usability is key.</h5>
+            <p>Patricia Moore's quote, "Stop designing for disability and start  designing for usability," greatly influenced my design approach. I aim to create designs that are usable to everyone and promote an  inclusive experience for all users.</p>
         </div>
-    </footer>
+        <div>
+            <h5>Always a student.</h5>
+            <p>I seek opportunities to learn and explore various design areas as they're interconnected uniquely. The continuous learning of design propels me to explore refreshing methods and approaches to my design.</p>
+        </div>
+        <div>
+            <h5>Further with community.</h5>
+            <p>Sharing knowledge and collaborating with one another will further the project. I value building a space and community with respect for all voices.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="breakTime aboutPg">
+    <h3>Break time? You can find me:</h3>
+    <div>
+        <div>
+            <img src="images/about/onepiece.png" alt="one piece egghead cover image">
+            <p>watching One Piece</p>
+        </div>
+        <div>
+            <img src="images/about/dumpling.jpg" alt="dumplings folded in different ways laid out on a table">
+            <p>cooking in attempt to replicate my grandma's recipes</p>
+        </div>
+        <div>
+            <img src="images/about/book.jpg" alt="hand holding up a book">
+            <p>reading novels (recently finished Michelle Zauner's Crying in H Mart)</p>
+        </div>
+        <div>
+            <img src="images/about/ceramics.jpg" alt="small clay dish">
+            <p>wheel throwing pottery and making ceramic trinkets</p>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="navEnd">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>
+
+    <h2>Contact me!</h2>
+      <div class="contactEnd">
+        <a href="mailto:&#097;&#115;&#104;&#108;&#101;&#121;&#046;&#105;&#114;&#101;&#110;&#101;&#046;&#099;&#104;&#097;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img src="images/email.svg" class="emailIcon" alt="email icon"></a> 
+        <a href="https://www.linkedin.com/in/ash-chang/"><img src="images/linkedin.svg" class="linkedIcon" alt="linkedin icon"></a>
+      </div>
+
+  </footer>
+
 </body>
 </html>
