@@ -199,7 +199,6 @@ header img{
 
 .stories > div{
     margin-bottom:32px;
-    width:50%;
 }
 
 .projectHalf .imgContainer > a, .stories > div > div >a {
@@ -657,6 +656,10 @@ blockquote{
         margin:auto;
         gap:72px;
         width:60%;
+    }
+
+    .stories > div{
+        width:50%;
     }
 
     .stories > div > .imgContainer{
