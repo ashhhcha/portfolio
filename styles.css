@@ -294,7 +294,7 @@ blockquote{
     margin: 32px 40px 0px 40px;
 }
 
-.projectImg, .cuzenImg, .petpulseImg, .carbonImg{
+.projectImg, .cuzenImg, .petpulseImg, .carbonImg, .g2lImg{
     width:100%;
     height:auto;
     border-radius:16px;
@@ -302,7 +302,7 @@ blockquote{
     margin-bottom:16px;
 }
 
-.cuzenImg, .petpulseImg, .carbonImg{
+.cuzenImg, .petpulseImg, .carbonImg, .g2lImg{
     margin-top:16px;
 }
 
@@ -378,6 +378,11 @@ blockquote{
     margin-bottom: 100px;
 }
 
+.highFidDescrip img{
+    box-shadow: 0px 00px 16px -8px rgba(0, 0, 0, 0.15);
+
+}
+
 .highFidGifs{
     width:100%;
     height:auto;
@@ -410,6 +415,21 @@ blockquote{
     margin-bottom:16px;
 }
 
+
+/* ======== goals2life ======== */
+.keyinsights{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.pivot{
+    margin-top:32px;
+    background-color: #DEF5B9;
+}
+
+.highFidSectg2l img{
+    box-shadow: 0px 00px 16px -8px rgba(0, 0, 0, 0.25);
+}
 
 /* ======== graphics page ======== */
 .graphicPg h2{
@@ -699,8 +719,18 @@ blockquote{
         gap:72px;
     }
 
+    .highFidSectg2l div img{
+        width:100%;
+    }
+    
+    .highFidSectg2l{
+        margin-bottom: 72px;
+        display:flex;
+        gap:32px;
+    }
 
-    .highFidSect div, .highFidSectSplit div > div{
+
+    .highFidSect div, .highFidSectSplit div > div, .highFidSectg2l div{
         width:50%;
     }
 
